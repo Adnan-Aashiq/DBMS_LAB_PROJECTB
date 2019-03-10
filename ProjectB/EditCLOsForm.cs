@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace ProjectB
 {
-    public partial class CLOsEditInfo : Form
+    public partial class EditCLOsForm : Form
     {
         public int Id;
-        public CLOsEditInfo(int id)
+        public EditCLOsForm(int id)
         {
             Id = id;
             InitializeComponent();
@@ -47,11 +47,11 @@ namespace ProjectB
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
         }
-
+        
         private void btnBackToMainPage_Click_1(object sender, EventArgs e)
         {
 
-            ListOfAddedCLOs v = new ListOfAddedCLOs();
+            ListOfAddedCLOsForm v = new ListOfAddedCLOsForm();
             this.Hide();
             v.Show();
         }

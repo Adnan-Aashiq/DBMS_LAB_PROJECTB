@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace ProjectB
 {
-    public partial class ListOfAddedCLOs : Form
+    public partial class ListOfAddedCLOsForm : Form
     {
-        public ListOfAddedCLOs()
+        public ListOfAddedCLOsForm()
         {
             InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace ProjectB
             {
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(CLOsDataGridView.Rows[row].Cells["Id"].Value);
-                CLOsEditInfo r = new CLOsEditInfo(id);
+                EditCLOsForm r = new EditCLOsForm(id);
                 this.Hide();
                 r.Show();
             }

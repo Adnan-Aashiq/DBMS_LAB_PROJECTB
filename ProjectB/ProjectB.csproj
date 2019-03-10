@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewCLOs.cs">
+    <Compile Include="AddAssessmentComponentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewCLOs.Designer.cs">
-      <DependentUpon>AddNewCLOs.cs</DependentUpon>
+    <Compile Include="AddAssessmentComponentForm.Designer.cs">
+      <DependentUpon>AddAssessmentComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAssessmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAssessmentForm.Designer.cs">
+      <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCLOsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCLOsForm.Designer.cs">
+      <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AddRubricForm.cs">
       <SubType>Form</SubType>
@@ -58,35 +70,77 @@
     <Compile Include="AddRubricForm.Designer.cs">
       <DependentUpon>AddRubricForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddRubricLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRubricLevelForm.Designer.cs">
+      <DependentUpon>AddRubricLevelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddStudentForm.Designer.cs">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLOsEditInfo.cs">
+    <Compile Include="EditAssessmentComponentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CLOsEditInfo.Designer.cs">
-      <DependentUpon>CLOsEditInfo.cs</DependentUpon>
+    <Compile Include="EditAssessmentComponentForm.Designer.cs">
+      <DependentUpon>EditAssessmentComponentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListOfAddedCLOs.cs">
+    <Compile Include="EditAssessmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListOfAddedCLOs.Designer.cs">
-      <DependentUpon>ListOfAddedCLOs.cs</DependentUpon>
+    <Compile Include="EditAssessmentForm.Designer.cs">
+      <DependentUpon>EditAssessmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegisteredStudents.cs">
+    <Compile Include="EditCLOsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisteredStudents.Designer.cs">
-      <DependentUpon>RegisteredStudents.cs</DependentUpon>
+    <Compile Include="EditCLOsForm.Designer.cs">
+      <DependentUpon>EditCLOsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInfoEdit.cs">
+    <Compile Include="EditRubricForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInfoEdit.Designer.cs">
-      <DependentUpon>StudentInfoEdit.cs</DependentUpon>
+    <Compile Include="EditRubricForm.Designer.cs">
+      <DependentUpon>EditRubricForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedAssessmentComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedAssessmentComponentForm.Designer.cs">
+      <DependentUpon>ListOfAddedAssessmentComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedAssessmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedAssessmentsForm.Designer.cs">
+      <DependentUpon>ListOfAddedAssessmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedCLOsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedCLOsForm.Designer.cs">
+      <DependentUpon>ListOfAddedCLOsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedRubricForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedRubricForm.Designer.cs">
+      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedStudentsForm.Designer.cs">
+      <DependentUpon>ListOfAddedStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentForm.Designer.cs">
+      <DependentUpon>EditStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -96,26 +150,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddNewCLOs.resx">
-      <DependentUpon>AddNewCLOs.cs</DependentUpon>
+    <EmbeddedResource Include="AddAssessmentComponentForm.resx">
+      <DependentUpon>AddAssessmentComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAssessmentForm.resx">
+      <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewCLOsForm.resx">
+      <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddRubricForm.resx">
       <DependentUpon>AddRubricForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddRubricLevelForm.resx">
+      <DependentUpon>AddRubricLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CLOsEditInfo.resx">
-      <DependentUpon>CLOsEditInfo.cs</DependentUpon>
+    <EmbeddedResource Include="EditAssessmentComponentForm.resx">
+      <DependentUpon>EditAssessmentComponentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedCLOs.resx">
-      <DependentUpon>ListOfAddedCLOs.cs</DependentUpon>
+    <EmbeddedResource Include="EditAssessmentForm.resx">
+      <DependentUpon>EditAssessmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegisteredStudents.resx">
-      <DependentUpon>RegisteredStudents.cs</DependentUpon>
+    <EmbeddedResource Include="EditCLOsForm.resx">
+      <DependentUpon>EditCLOsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInfoEdit.resx">
-      <DependentUpon>StudentInfoEdit.cs</DependentUpon>
+    <EmbeddedResource Include="EditRubricForm.resx">
+      <DependentUpon>EditRubricForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedAssessmentsForm.resx">
+      <DependentUpon>ListOfAddedAssessmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedCLOsForm.resx">
+      <DependentUpon>ListOfAddedCLOsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedRubricForm.resx">
+      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedStudentsForm.resx">
+      <DependentUpon>ListOfAddedStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentForm.resx">
+      <DependentUpon>EditStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>

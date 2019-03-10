@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class StudentInfoEdit
+    partial class EditStudentForm
     {
         /// <summary>
         /// Required designer variable.

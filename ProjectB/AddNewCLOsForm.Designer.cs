@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class AddNewCLOs
+    partial class AddNewCLOsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.dtpCreatedDate = new System.Windows.Forms.DateTimePicker();
             this.btnAddCLOs = new System.Windows.Forms.Button();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
+            this.btnAddedCLOs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCLOName
@@ -89,11 +90,22 @@
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
             // 
+            // btnAddedCLOs
+            // 
+            this.btnAddedCLOs.Location = new System.Drawing.Point(389, 291);
+            this.btnAddedCLOs.Name = "btnAddedCLOs";
+            this.btnAddedCLOs.Size = new System.Drawing.Size(141, 23);
+            this.btnAddedCLOs.TabIndex = 6;
+            this.btnAddedCLOs.Text = "List Of Added CLOs";
+            this.btnAddedCLOs.UseVisualStyleBackColor = true;
+            this.btnAddedCLOs.Click += new System.EventHandler(this.btnAddedCLOs_Click);
+            // 
             // AddNewCLOs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAddedCLOs);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnAddCLOs);
             this.Controls.Add(this.dtpCreatedDate);
@@ -115,5 +127,6 @@
         private System.Windows.Forms.DateTimePicker dtpCreatedDate;
         private System.Windows.Forms.Button btnAddCLOs;
         private System.Windows.Forms.Button btnBackToMainPage;
+        private System.Windows.Forms.Button btnAddedCLOs;
     }
 }

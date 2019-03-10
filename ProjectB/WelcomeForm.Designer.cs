@@ -31,8 +31,7 @@
             this.lblinfo = new System.Windows.Forms.Label();
             this.btnaddnewstudent = new System.Windows.Forms.Button();
             this.btnAddNewCLO = new System.Windows.Forms.Button();
-            this.btnRegisteredStudents = new System.Windows.Forms.Button();
-            this.btnAddedCLOs = new System.Windows.Forms.Button();
+            this.btnAddAssessmentMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblinfo
@@ -64,33 +63,22 @@
             this.btnAddNewCLO.UseVisualStyleBackColor = true;
             this.btnAddNewCLO.Click += new System.EventHandler(this.btnAddNewCLO_Click);
             // 
-            // btnRegisteredStudents
+            // btnAddAssessmentMenu
             // 
-            this.btnRegisteredStudents.Location = new System.Drawing.Point(41, 169);
-            this.btnRegisteredStudents.Name = "btnRegisteredStudents";
-            this.btnRegisteredStudents.Size = new System.Drawing.Size(151, 23);
-            this.btnRegisteredStudents.TabIndex = 3;
-            this.btnRegisteredStudents.Text = "Registered Students";
-            this.btnRegisteredStudents.UseVisualStyleBackColor = true;
-            this.btnRegisteredStudents.Click += new System.EventHandler(this.btnRegisteredStudents_Click);
-            // 
-            // btnAddedCLOs
-            // 
-            this.btnAddedCLOs.Location = new System.Drawing.Point(255, 169);
-            this.btnAddedCLOs.Name = "btnAddedCLOs";
-            this.btnAddedCLOs.Size = new System.Drawing.Size(141, 23);
-            this.btnAddedCLOs.TabIndex = 4;
-            this.btnAddedCLOs.Text = "List Of Added CLOs";
-            this.btnAddedCLOs.UseVisualStyleBackColor = true;
-            this.btnAddedCLOs.Click += new System.EventHandler(this.btnAddedCLOs_Click);
+            this.btnAddAssessmentMenu.Location = new System.Drawing.Point(37, 185);
+            this.btnAddAssessmentMenu.Name = "btnAddAssessmentMenu";
+            this.btnAddAssessmentMenu.Size = new System.Drawing.Size(128, 23);
+            this.btnAddAssessmentMenu.TabIndex = 6;
+            this.btnAddAssessmentMenu.Text = "Add Assessment Menu";
+            this.btnAddAssessmentMenu.UseVisualStyleBackColor = true;
+            this.btnAddAssessmentMenu.Click += new System.EventHandler(this.btnAddAssessmentMenu_Click);
             // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 324);
-            this.Controls.Add(this.btnAddedCLOs);
-            this.Controls.Add(this.btnRegisteredStudents);
+            this.Controls.Add(this.btnAddAssessmentMenu);
             this.Controls.Add(this.btnAddNewCLO);
             this.Controls.Add(this.btnaddnewstudent);
             this.Controls.Add(this.lblinfo);
@@ -107,8 +95,7 @@
         private System.Windows.Forms.Label lblinfo;
         private System.Windows.Forms.Button btnaddnewstudent;
         private System.Windows.Forms.Button btnAddNewCLO;
-        private System.Windows.Forms.Button btnRegisteredStudents;
-        private System.Windows.Forms.Button btnAddedCLOs;
+        private System.Windows.Forms.Button btnAddAssessmentMenu;
     }
 }
 

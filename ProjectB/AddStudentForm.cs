@@ -44,5 +44,12 @@ namespace ProjectB
             this.Hide();
             back.Show();
         }
+
+        private void btnRegisteredStudents_Click(object sender, EventArgs e)
+        {
+            ListOfAddedStudentsForm r = new ListOfAddedStudentsForm();
+            this.Hide();
+            r.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class RegisteredStudents
+    partial class ListOfAddedCLOsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.btnBackToMainPage = new System.Windows.Forms.Button();
-            this.StudentDataGridView = new System.Windows.Forms.DataGridView();
+            this.CLOsDataGridView = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
+            this.btnAddRubric = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBackToMainPage
@@ -45,17 +46,18 @@
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
             // 
-            // StudentDataGridView
+            // CLOsDataGridView
             // 
-            this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CLOsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CLOsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
-            this.btnEdit});
-            this.StudentDataGridView.Location = new System.Drawing.Point(90, 32);
-            this.StudentDataGridView.Name = "StudentDataGridView";
-            this.StudentDataGridView.Size = new System.Drawing.Size(616, 282);
-            this.StudentDataGridView.TabIndex = 1;
-            this.StudentDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellContentClick);
+            this.btnEdit,
+            this.btnAddRubric});
+            this.CLOsDataGridView.Location = new System.Drawing.Point(96, 34);
+            this.CLOsDataGridView.Name = "CLOsDataGridView";
+            this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
+            this.CLOsDataGridView.TabIndex = 2;
+            this.CLOsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CLOsDataGridView_CellContentClick);
             // 
             // btnDelete
             // 
@@ -71,17 +73,24 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseColumnTextForButtonValue = true;
             // 
-            // RegisteredStudents
+            // btnAddRubric
+            // 
+            this.btnAddRubric.HeaderText = "AddRubric";
+            this.btnAddRubric.Name = "btnAddRubric";
+            this.btnAddRubric.Text = "AddRubric";
+            this.btnAddRubric.UseColumnTextForButtonValue = true;
+            // 
+            // ListOfAddedCLOs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.StudentDataGridView);
+            this.Controls.Add(this.CLOsDataGridView);
             this.Controls.Add(this.btnBackToMainPage);
-            this.Name = "RegisteredStudents";
-            this.Text = "RegisteredStudents";
-            this.Load += new System.EventHandler(this.RegisteredStudents_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
+            this.Name = "ListOfAddedCLOs";
+            this.Text = "ListOfAddedCLOs";
+            this.Load += new System.EventHandler(this.ListOfAddedCLOs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,8 +98,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnBackToMainPage;
-        private System.Windows.Forms.DataGridView StudentDataGridView;
+        private System.Windows.Forms.DataGridView CLOsDataGridView;
         private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
         private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
+        private System.Windows.Forms.DataGridViewButtonColumn btnAddRubric;
     }
 }

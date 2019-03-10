@@ -11,51 +11,43 @@ using System.Data.SqlClient;
 
 namespace ProjectB
 {
-    public partial class AddRubricForm : Form
+    public partial class AddAssessmentForm : Form
     {
-        public int Id;
-        public AddRubricForm(int id)
+        public AddAssessmentForm()
         {
-            Id = id;
             InitializeComponent();
         }
-        private void btnBackToMainPage_Click(object sender, EventArgs e)
+
+        private void btnBackToMain_Click(object sender, EventArgs e)
         {
-            ListOfAddedCLOsForm w = new ListOfAddedCLOsForm();
+            WelcomeForm w = new WelcomeForm();
             this.Hide();
             w.Show();
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
-        private int id;
-
-        private void btnADD_Click(object sender, EventArgs e)
+        private void btnADDAssessment_Click(object sender, EventArgs e)
         {
             SqlConnection c = new SqlConnection(constr);
             c.Open();
             if (c.State == ConnectionState.Open)
             {
-                string Query = "insert into Rubric(Details,CloId) values('" + txtRubricDetails.Text + "','" + Id + "')";
+                string Query = "insert into dbo.Assessment(Title,DateCreated,TotalMarks,TotalWeightage) values ('" + txtTitle.Text.ToString() + "','" +dtpDateCreated.Value + "', '" + Convert.ToInt32(txtTotalMarks.Text) + "','" + Convert.ToInt32(txtTotalWeightage.Text) + "')";
                 SqlCommand cmd = new SqlCommand(Query, c);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Rubric Detail is Added");
+                MessageBox.Show("Assessment is Added");
             }
             else
             {
-                MessageBox.Show("Rubric Detail is not Added");
+                MessageBox.Show("Assessment is not Added");
 
             }
         }
 
-        private void AddRubricForm_Load(object sender, EventArgs e)
+        private void btnListOfAddedAssessment_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ListOfAddedRubricForm f = new ListOfAddedRubricForm(id);
+            ListOfAddedAssessmentsForm d = new ListOfAddedAssessmentsForm();
             this.Hide();
-            f.Show();
+            d.Show();
         }
-    }
+    }       
 }

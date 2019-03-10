@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class ListOfAddedCLOs
+    partial class ListOfAddedAssessmentsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ListOfAddedAssessmentsDataGridView = new System.Windows.Forms.DataGridView();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
-            this.CLOsDataGridView = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAddAssessmentComponent = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnAddRubric = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListOfAddedAssessmentsDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ListOfAddedAssessmentsDataGridView
+            // 
+            this.ListOfAddedAssessmentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListOfAddedAssessmentsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnDelete,
+            this.btnAddAssessmentComponent,
+            this.btnEdit});
+            this.ListOfAddedAssessmentsDataGridView.Location = new System.Drawing.Point(93, 32);
+            this.ListOfAddedAssessmentsDataGridView.Name = "ListOfAddedAssessmentsDataGridView";
+            this.ListOfAddedAssessmentsDataGridView.Size = new System.Drawing.Size(616, 282);
+            this.ListOfAddedAssessmentsDataGridView.TabIndex = 3;
+            this.ListOfAddedAssessmentsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellContentClick);
             // 
             // btnBackToMainPage
             // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(0, 0);
+            this.btnBackToMainPage.Location = new System.Drawing.Point(3, 0);
             this.btnBackToMainPage.Name = "btnBackToMainPage";
             this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToMainPage.TabIndex = 0;
+            this.btnBackToMainPage.TabIndex = 2;
             this.btnBackToMainPage.Text = "<<BACK<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
-            // 
-            // CLOsDataGridView
-            // 
-            this.CLOsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CLOsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnDelete,
-            this.btnEdit,
-            this.btnAddRubric});
-            this.CLOsDataGridView.Location = new System.Drawing.Point(96, 34);
-            this.CLOsDataGridView.Name = "CLOsDataGridView";
-            this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
-            this.CLOsDataGridView.TabIndex = 2;
-            this.CLOsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CLOsDataGridView_CellContentClick);
             // 
             // btnDelete
             // 
@@ -66,6 +66,13 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseColumnTextForButtonValue = true;
             // 
+            // btnAddAssessmentComponent
+            // 
+            this.btnAddAssessmentComponent.HeaderText = "AddAssessmentComponent";
+            this.btnAddAssessmentComponent.Name = "btnAddAssessmentComponent";
+            this.btnAddAssessmentComponent.Text = "AddAssessmentComponent";
+            this.btnAddAssessmentComponent.UseColumnTextForButtonValue = true;
+            // 
             // btnEdit
             // 
             this.btnEdit.HeaderText = "Edit";
@@ -73,34 +80,27 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseColumnTextForButtonValue = true;
             // 
-            // btnAddRubric
-            // 
-            this.btnAddRubric.HeaderText = "AddRubric";
-            this.btnAddRubric.Name = "btnAddRubric";
-            this.btnAddRubric.Text = "AddRubric";
-            this.btnAddRubric.UseColumnTextForButtonValue = true;
-            // 
-            // ListOfAddedCLOs
+            // ListOfAddedAssessmentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.CLOsDataGridView);
+            this.Controls.Add(this.ListOfAddedAssessmentsDataGridView);
             this.Controls.Add(this.btnBackToMainPage);
-            this.Name = "ListOfAddedCLOs";
-            this.Text = "ListOfAddedCLOs";
-            this.Load += new System.EventHandler(this.ListOfAddedCLOs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).EndInit();
+            this.Name = "ListOfAddedAssessmentsForm";
+            this.Text = "ListOfAddedAssessmentsForm";
+            this.Load += new System.EventHandler(this.ListOfAddedAssessmentsForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ListOfAddedAssessmentsDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.DataGridView ListOfAddedAssessmentsDataGridView;
         private System.Windows.Forms.Button btnBackToMainPage;
-        private System.Windows.Forms.DataGridView CLOsDataGridView;
         private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
+        private System.Windows.Forms.DataGridViewButtonColumn btnAddAssessmentComponent;
         private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
-        private System.Windows.Forms.DataGridViewButtonColumn btnAddRubric;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace ProjectB
 {
-    public partial class AddNewCLOs : Form
+    public partial class AddNewCLOsForm : Form
     {
-        public AddNewCLOs()
+        public AddNewCLOsForm()
         {
             InitializeComponent();
         }
@@ -47,5 +47,11 @@ namespace ProjectB
             }
         }
 
+        private void btnAddedCLOs_Click(object sender, EventArgs e)
+        {
+            ListOfAddedCLOsForm l = new ListOfAddedCLOsForm();
+            this.Hide();
+            l.Show();
+        }
     }
 }

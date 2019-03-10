@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace ProjectB
 {
-    public partial class RegisteredStudents : Form
+    public partial class ListOfAddedStudentsForm : Form
     {
-        public RegisteredStudents()
+        public ListOfAddedStudentsForm()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace ProjectB
             {
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(StudentDataGridView.Rows[row].Cells["Id"].Value);
-                StudentInfoEdit r = new StudentInfoEdit(id);
+                EditStudentForm r = new EditStudentForm(id);
                 this.Hide();
                 r.Show();
             }

@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class CLOsEditInfo
+    partial class EditCLOsForm
     {
         /// <summary>
         /// Required designer variable.

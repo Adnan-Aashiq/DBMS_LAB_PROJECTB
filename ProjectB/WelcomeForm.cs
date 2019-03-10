@@ -28,14 +28,14 @@ namespace ProjectB
         private void btnRegisteredStudents_Click(object sender, EventArgs e)
         {
 
-            RegisteredStudents registeredStudents = new RegisteredStudents();
+            ListOfAddedStudentsForm registeredStudents = new ListOfAddedStudentsForm();
             this.Hide();
             registeredStudents.Show();
         }
 
         private void btnAddedCLOs_Click(object sender, EventArgs e)
         {
-            ListOfAddedCLOs registeredStudents = new ListOfAddedCLOs();
+            ListOfAddedCLOsForm registeredStudents = new ListOfAddedCLOsForm();
             this.Hide();
             registeredStudents.Show();
         }
@@ -47,9 +47,16 @@ namespace ProjectB
 
         private void btnAddNewCLO_Click(object sender, EventArgs e)
         {
-            AddNewCLOs clo = new AddNewCLOs();
+            AddNewCLOsForm clo = new AddNewCLOsForm();
             this.Hide();
             clo.Show();
+        }
+
+        private void btnAddAssessmentMenu_Click(object sender, EventArgs e)
+        {
+            AddAssessmentForm a = new AddAssessmentForm();
+            this.Hide();
+            a.Show();
         }
     }
 }

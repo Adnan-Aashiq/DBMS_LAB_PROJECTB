@@ -12,14 +12,14 @@ using System.Data.OleDb;
 
 namespace ProjectB
 {
-    public partial class StudentInfoEdit : Form
+    public partial class EditStudentForm : Form
     {
         public int Id;
-        public StudentInfoEdit()
+        public EditStudentForm()
         {
             InitializeComponent();
         }
-        public StudentInfoEdit(int id)
+        public EditStudentForm(int id)
         {
             Id = id;
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace ProjectB
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
-            RegisteredStudents re = new RegisteredStudents();
+            ListOfAddedStudentsForm re = new ListOfAddedStudentsForm();
             this.Hide();
             re.Show();
         }

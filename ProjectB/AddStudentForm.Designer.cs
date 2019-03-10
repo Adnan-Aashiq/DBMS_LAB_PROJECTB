@@ -42,6 +42,7 @@
             this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
+            this.btnRegisteredStudents = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -161,11 +162,22 @@
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnRegisteredStudents
+            // 
+            this.btnRegisteredStudents.Location = new System.Drawing.Point(319, 406);
+            this.btnRegisteredStudents.Name = "btnRegisteredStudents";
+            this.btnRegisteredStudents.Size = new System.Drawing.Size(151, 23);
+            this.btnRegisteredStudents.TabIndex = 15;
+            this.btnRegisteredStudents.Text = "Registered Students";
+            this.btnRegisteredStudents.UseVisualStyleBackColor = true;
+            this.btnRegisteredStudents.Click += new System.EventHandler(this.btnRegisteredStudents_Click);
+            // 
             // FormAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 450);
+            this.Controls.Add(this.btnRegisteredStudents);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtRegistrationNumber);
@@ -203,5 +215,6 @@
         private System.Windows.Forms.TextBox txtRegistrationNumber;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnBackToMainPage;
+        private System.Windows.Forms.Button btnRegisteredStudents;
     }
 }
