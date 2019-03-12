@@ -27,7 +27,7 @@ namespace ProjectB
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
-            ListOfAddedStudentsForm re = new ListOfAddedStudentsForm();
+            WelcomeForm re = new WelcomeForm();
             this.Hide();
             re.Show();
         }
@@ -68,6 +68,13 @@ namespace ProjectB
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
+        }
+
+        private void btnBackToStudentMenu_Click(object sender, EventArgs e)
+        {
+            ListOfAddedStudentsForm d = new ListOfAddedStudentsForm();
+            this.Hide();
+            d.Show();
         }
     }
 }

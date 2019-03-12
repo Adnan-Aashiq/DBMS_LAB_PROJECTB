@@ -33,6 +33,7 @@
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAddRubric = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnBackToAddStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,9 +41,9 @@
             // 
             this.btnBackToMainPage.Location = new System.Drawing.Point(0, 0);
             this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainPage.Size = new System.Drawing.Size(145, 23);
             this.btnBackToMainPage.TabIndex = 0;
-            this.btnBackToMainPage.Text = "<<BACK<<";
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
             // 
@@ -53,7 +54,7 @@
             this.btnDelete,
             this.btnEdit,
             this.btnAddRubric});
-            this.CLOsDataGridView.Location = new System.Drawing.Point(96, 34);
+            this.CLOsDataGridView.Location = new System.Drawing.Point(98, 87);
             this.CLOsDataGridView.Name = "CLOsDataGridView";
             this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
             this.CLOsDataGridView.TabIndex = 2;
@@ -80,14 +81,25 @@
             this.btnAddRubric.Text = "AddRubric";
             this.btnAddRubric.UseColumnTextForButtonValue = true;
             // 
-            // ListOfAddedCLOs
+            // btnBackToAddStudent
+            // 
+            this.btnBackToAddStudent.Location = new System.Drawing.Point(143, 0);
+            this.btnBackToAddStudent.Name = "btnBackToAddStudent";
+            this.btnBackToAddStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToAddStudent.TabIndex = 3;
+            this.btnBackToAddStudent.Text = "<<BACK<<";
+            this.btnBackToAddStudent.UseVisualStyleBackColor = true;
+            this.btnBackToAddStudent.Click += new System.EventHandler(this.btnBackToAddStudent_Click);
+            // 
+            // ListOfAddedCLOsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBackToAddStudent);
             this.Controls.Add(this.CLOsDataGridView);
             this.Controls.Add(this.btnBackToMainPage);
-            this.Name = "ListOfAddedCLOs";
+            this.Name = "ListOfAddedCLOsForm";
             this.Text = "ListOfAddedCLOs";
             this.Load += new System.EventHandler(this.ListOfAddedCLOs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).EndInit();
@@ -102,5 +114,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
         private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
         private System.Windows.Forms.DataGridViewButtonColumn btnAddRubric;
+        private System.Windows.Forms.Button btnBackToAddStudent;
     }
 }

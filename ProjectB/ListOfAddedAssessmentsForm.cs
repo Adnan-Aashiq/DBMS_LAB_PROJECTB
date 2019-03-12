@@ -53,7 +53,9 @@ namespace ProjectB
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
-
+            AddAssessmentForm f = new AddAssessmentForm();
+            this.Hide();
+            f.Show();
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void ListOfAddedAssessmentsForm_Load(object sender, EventArgs e)
@@ -73,6 +75,13 @@ namespace ProjectB
                     }
                 }
             }
+        }
+
+        private void btnListOfAddedAssessmentComponents_Click(object sender, EventArgs e)
+        {
+            ListOfAddedAssessmentComponentForm n = new ListOfAddedAssessmentComponentForm();
+            this.Hide();
+            n.Show();
         }
     }
 }

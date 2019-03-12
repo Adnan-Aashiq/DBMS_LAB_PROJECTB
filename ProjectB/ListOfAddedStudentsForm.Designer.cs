@@ -32,6 +32,7 @@
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnBackToAddStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,9 +40,9 @@
             // 
             this.btnBackToMainPage.Location = new System.Drawing.Point(0, 0);
             this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainPage.Size = new System.Drawing.Size(144, 23);
             this.btnBackToMainPage.TabIndex = 0;
-            this.btnBackToMainPage.Text = "<<BACK<<";
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
             // 
@@ -51,7 +52,7 @@
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
             this.btnEdit});
-            this.StudentDataGridView.Location = new System.Drawing.Point(90, 32);
+            this.StudentDataGridView.Location = new System.Drawing.Point(91, 87);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.Size = new System.Drawing.Size(616, 282);
             this.StudentDataGridView.TabIndex = 1;
@@ -71,14 +72,25 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseColumnTextForButtonValue = true;
             // 
-            // RegisteredStudents
+            // btnBackToAddStudent
+            // 
+            this.btnBackToAddStudent.Location = new System.Drawing.Point(144, 0);
+            this.btnBackToAddStudent.Name = "btnBackToAddStudent";
+            this.btnBackToAddStudent.Size = new System.Drawing.Size(124, 23);
+            this.btnBackToAddStudent.TabIndex = 2;
+            this.btnBackToAddStudent.Text = "<<BACK<<";
+            this.btnBackToAddStudent.UseVisualStyleBackColor = true;
+            this.btnBackToAddStudent.Click += new System.EventHandler(this.btnBackToAddStudent_Click);
+            // 
+            // ListOfAddedStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBackToAddStudent);
             this.Controls.Add(this.StudentDataGridView);
             this.Controls.Add(this.btnBackToMainPage);
-            this.Name = "RegisteredStudents";
+            this.Name = "ListOfAddedStudentsForm";
             this.Text = "RegisteredStudents";
             this.Load += new System.EventHandler(this.RegisteredStudents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
@@ -92,5 +104,6 @@
         private System.Windows.Forms.DataGridView StudentDataGridView;
         private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
         private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
+        private System.Windows.Forms.Button btnBackToAddStudent;
     }
 }

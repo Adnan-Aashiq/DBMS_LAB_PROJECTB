@@ -63,6 +63,8 @@ namespace ProjectB
             {
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(ListOfAddedRubricdataGridView.Rows[row].Cells["Id"].Value);
+                int CLOId = Convert.ToInt32(ListOfAddedRubricdataGridView.Rows[row].Cells["CloId"].Value);
+
                 EditRubricForm r = new EditRubricForm(id,CLOId);
                 this.Hide();
                 r.Show();
@@ -75,6 +77,20 @@ namespace ProjectB
                 this.Hide();
                 r.Show();
             }
+        }
+
+        private void btnBackToMainPage_Click(object sender, EventArgs e)
+        {
+            WelcomeForm y = new WelcomeForm();
+            this.Hide();
+            y.Show();
+        }
+
+        private void btnRubricLevelMenu_Click(object sender, EventArgs e)
+        {
+            ListOfAddedRubricLevelForm u = new ListOfAddedRubricLevelForm();
+            this.Hide();
+            u.Show();
         }
     }
 }

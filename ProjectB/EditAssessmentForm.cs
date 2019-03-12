@@ -60,5 +60,12 @@ namespace ProjectB
             int p = (int)myReader[4];
             txtTotalWeightage.Text = p.ToString();
         }
+
+        private void btnBackTolListOfAddedAssessment_Click(object sender, EventArgs e)
+        {
+            ListOfAddedAssessmentsForm r = new ListOfAddedAssessmentsForm();
+            this.Hide();
+            r.Show();
+        }
     }
 }

@@ -49,5 +49,19 @@ namespace ProjectB
             this.Hide();
             d.Show();
         }
+
+        private void btnBackToMainPage_Click(object sender, EventArgs e)
+        {
+
+            WelcomeForm o = new WelcomeForm();
+            this.Hide();
+            o.Show();
+
+        }
+
+        private void AddAssessmentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }       
 }

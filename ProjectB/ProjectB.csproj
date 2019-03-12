@@ -58,6 +58,12 @@
     <Compile Include="AddAssessmentForm.Designer.cs">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LookupMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupMenuForm.Designer.cs">
+      <DependentUpon>LookupMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewCLOsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="AddStudentForm.Designer.cs">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassAttendanceForm.Designer.cs">
+      <DependentUpon>ClassAttendanceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditAssessmentComponentForm.cs">
       <SubType>Form</SubType>
@@ -106,6 +118,12 @@
     <Compile Include="EditRubricForm.Designer.cs">
       <DependentUpon>EditRubricForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditRubricLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRubricLevelForm.Designer.cs">
+      <DependentUpon>EditRubricLevelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListOfAddedAssessmentComponentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +148,12 @@
     <Compile Include="ListOfAddedRubricForm.Designer.cs">
       <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListOfAddedRubricLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedRubricLevelForm.Designer.cs">
+      <DependentUpon>ListOfAddedRubricLevelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListOfAddedStudentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +165,18 @@
     </Compile>
     <Compile Include="EditStudentForm.Designer.cs">
       <DependentUpon>EditStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendanceForm.Designer.cs">
+      <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentResultForm.Designer.cs">
+      <DependentUpon>StudentResultForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -156,6 +192,9 @@
     <EmbeddedResource Include="AddAssessmentForm.resx">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LookupMenuForm.resx">
+      <DependentUpon>LookupMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewCLOsForm.resx">
       <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassAttendanceForm.resx">
+      <DependentUpon>ClassAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAssessmentComponentForm.resx">
       <DependentUpon>EditAssessmentComponentForm.cs</DependentUpon>
@@ -180,6 +222,12 @@
     <EmbeddedResource Include="EditRubricForm.resx">
       <DependentUpon>EditRubricForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditRubricLevelForm.resx">
+      <DependentUpon>EditRubricLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedAssessmentComponentForm.resx">
+      <DependentUpon>ListOfAddedAssessmentComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListOfAddedAssessmentsForm.resx">
       <DependentUpon>ListOfAddedAssessmentsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,11 +237,17 @@
     <EmbeddedResource Include="ListOfAddedRubricForm.resx">
       <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedRubricLevelForm.resx">
+      <DependentUpon>ListOfAddedRubricLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListOfAddedStudentsForm.resx">
       <DependentUpon>ListOfAddedStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditStudentForm.resx">
       <DependentUpon>EditStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendanceForm.resx">
+      <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>

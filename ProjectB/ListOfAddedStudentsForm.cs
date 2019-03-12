@@ -51,7 +51,7 @@ namespace ProjectB
             Connection.Open();
             if (e.ColumnIndex == StudentDataGridView.Columns["btnDelete"].Index)
             {
-                this.StudentDataGridView.Rows.RemoveAt(e.RowIndex);
+               // this.StudentDataGridView.Rows.RemoveAt(e.RowIndex);
                 int row = e.RowIndex;
                 int Id = Convert.ToInt32(StudentDataGridView.Rows[row].Cells["Id"].Value);
                 string Delete_Query = "DELETE FROM dbo.Student  WHERE Id = '" + Id + "'";
@@ -68,6 +68,13 @@ namespace ProjectB
                 this.Hide();
                 r.Show();
             }
+        }
+
+        private void btnBackToAddStudent_Click(object sender, EventArgs e)
+        {
+            FormAddStudent t = new FormAddStudent();
+            this.Hide();
+            t.Show();
         }
     }
 }

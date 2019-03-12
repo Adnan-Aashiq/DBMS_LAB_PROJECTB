@@ -37,11 +37,11 @@ namespace ProjectB
         {
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            string CLOID = "select CloId from dbo.Rubric WHERE Id = '" + Id + "'";
-            SqlCommand t = new SqlCommand(CLOID, Connection);
-            var r=t.ExecuteNonQuery();
-            int o = Convert.ToInt32(r);
-            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" + o + "'  WHERE Id = '" + Id + "'";
+            //string query = "select * from dbo.Rubric WHERE Id = '" + Id + "'";
+            //SqlCommand t = new SqlCommand(query, Connection);
+            //var r=t.ExecuteReader();
+            //int o = r.GetInt32(2);
+            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" + a + "'  WHERE Id = '" + Id + "'";
             //string Get_Query = "select * from tbl_employees where emp_id = '" + Id + "'";
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
@@ -50,6 +50,23 @@ namespace ProjectB
 
         private void EditRubricForm_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnBackToMainPage_Click_1(object sender, EventArgs e)
+        {
+
+            WelcomeForm o = new WelcomeForm();
+            this.Hide();
+            o.Show();
+
+        }
+
+        private void btnBackTolListOfAddedRubric_Click(object sender, EventArgs e)
+        {
+            ListOfAddedRubricForm p = new ListOfAddedRubricForm();
+            this.Hide();
+            p.Show();
 
         }
     }

@@ -30,7 +30,7 @@ namespace ProjectB
                 c.Open();
                 if (c.State == ConnectionState.Open)
                 {
-                    string Query = "insert into RubricLevel(Details,CloId) values('" + txtDetails.Text + "','" + Convert.ToInt32(txtMeasurementLevel.Text) + "')";
+                    string Query = "insert into RubricLevel(RubricId,Details,MeasurementLevel) values('"+Id+"','" + txtDetails.Text + "','" + Convert.ToInt32(txtMeasurementLevel.Text) + "')";
                     SqlCommand cmd = new SqlCommand(Query, c);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Rubric Level Detail is Added");
@@ -45,6 +45,20 @@ namespace ProjectB
         private void AddRubricLevelForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ListOfAddedRubricForm f = new ListOfAddedRubricForm();
+            this.Hide();
+            f.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WelcomeForm o = new WelcomeForm();
+            this.Hide();
+            o.Show();
         }
     }
 }

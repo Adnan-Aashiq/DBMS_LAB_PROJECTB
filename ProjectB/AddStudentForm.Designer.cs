@@ -42,7 +42,7 @@
             this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
-            this.btnRegisteredStudents = new System.Windows.Forms.Button();
+            this.btnViewRegisteredStudents = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -151,33 +151,34 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 13;
+            this.textBox1.Text = "Active";
             // 
             // btnBackToMainPage
             // 
             this.btnBackToMainPage.Location = new System.Drawing.Point(0, 0);
             this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainPage.Size = new System.Drawing.Size(138, 23);
             this.btnBackToMainPage.TabIndex = 14;
             this.btnBackToMainPage.Text = "<<BACK<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             this.btnBackToMainPage.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnRegisteredStudents
+            // btnViewRegisteredStudents
             // 
-            this.btnRegisteredStudents.Location = new System.Drawing.Point(319, 406);
-            this.btnRegisteredStudents.Name = "btnRegisteredStudents";
-            this.btnRegisteredStudents.Size = new System.Drawing.Size(151, 23);
-            this.btnRegisteredStudents.TabIndex = 15;
-            this.btnRegisteredStudents.Text = "Registered Students";
-            this.btnRegisteredStudents.UseVisualStyleBackColor = true;
-            this.btnRegisteredStudents.Click += new System.EventHandler(this.btnRegisteredStudents_Click);
+            this.btnViewRegisteredStudents.Location = new System.Drawing.Point(542, 0);
+            this.btnViewRegisteredStudents.Name = "btnViewRegisteredStudents";
+            this.btnViewRegisteredStudents.Size = new System.Drawing.Size(151, 23);
+            this.btnViewRegisteredStudents.TabIndex = 15;
+            this.btnViewRegisteredStudents.Text = "View Registered Students";
+            this.btnViewRegisteredStudents.UseVisualStyleBackColor = true;
+            this.btnViewRegisteredStudents.Click += new System.EventHandler(this.btnRegisteredStudents_Click);
             // 
             // FormAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 450);
-            this.Controls.Add(this.btnRegisteredStudents);
+            this.Controls.Add(this.btnViewRegisteredStudents);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtRegistrationNumber);
@@ -215,6 +216,6 @@
         private System.Windows.Forms.TextBox txtRegistrationNumber;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnBackToMainPage;
-        private System.Windows.Forms.Button btnRegisteredStudents;
+        private System.Windows.Forms.Button btnViewRegisteredStudents;
     }
 }

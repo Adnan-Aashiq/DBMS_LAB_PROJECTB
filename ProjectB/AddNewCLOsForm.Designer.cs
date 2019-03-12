@@ -40,7 +40,7 @@
             // lblCLOName
             // 
             this.lblCLOName.AutoSize = true;
-            this.lblCLOName.Location = new System.Drawing.Point(288, 98);
+            this.lblCLOName.Location = new System.Drawing.Point(270, 126);
             this.lblCLOName.Name = "lblCLOName";
             this.lblCLOName.Size = new System.Drawing.Size(59, 13);
             this.lblCLOName.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // txtCLOName
             // 
-            this.txtCLOName.Location = new System.Drawing.Point(398, 91);
+            this.txtCLOName.Location = new System.Drawing.Point(380, 119);
             this.txtCLOName.Name = "txtCLOName";
             this.txtCLOName.Size = new System.Drawing.Size(100, 20);
             this.txtCLOName.TabIndex = 1;
@@ -56,7 +56,7 @@
             // lblCreatedDate
             // 
             this.lblCreatedDate.AutoSize = true;
-            this.lblCreatedDate.Location = new System.Drawing.Point(288, 151);
+            this.lblCreatedDate.Location = new System.Drawing.Point(270, 179);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(70, 13);
             this.lblCreatedDate.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // dtpCreatedDate
             // 
-            this.dtpCreatedDate.Location = new System.Drawing.Point(389, 151);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(371, 179);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
             this.dtpCreatedDate.Size = new System.Drawing.Size(200, 20);
             this.dtpCreatedDate.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // btnAddCLOs
             // 
-            this.btnAddCLOs.Location = new System.Drawing.Point(423, 226);
+            this.btnAddCLOs.Location = new System.Drawing.Point(405, 254);
             this.btnAddCLOs.Name = "btnAddCLOs";
             this.btnAddCLOs.Size = new System.Drawing.Size(75, 23);
             this.btnAddCLOs.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             // btnAddedCLOs
             // 
-            this.btnAddedCLOs.Location = new System.Drawing.Point(389, 291);
+            this.btnAddedCLOs.Location = new System.Drawing.Point(659, 0);
             this.btnAddedCLOs.Name = "btnAddedCLOs";
             this.btnAddedCLOs.Size = new System.Drawing.Size(141, 23);
             this.btnAddedCLOs.TabIndex = 6;
@@ -100,7 +100,7 @@
             this.btnAddedCLOs.UseVisualStyleBackColor = true;
             this.btnAddedCLOs.Click += new System.EventHandler(this.btnAddedCLOs_Click);
             // 
-            // AddNewCLOs
+            // AddNewCLOsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.txtCLOName);
             this.Controls.Add(this.lblCLOName);
-            this.Name = "AddNewCLOs";
+            this.Name = "AddNewCLOsForm";
             this.Text = "AddNewCLOs";
             this.ResumeLayout(false);
             this.PerformLayout();

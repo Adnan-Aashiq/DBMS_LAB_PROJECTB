@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBackToMain = new System.Windows.Forms.Button();
+            this.btnBackTolListOfAddedAssessment = new System.Windows.Forms.Button();
             this.btnUpdateAssessment = new System.Windows.Forms.Button();
             this.txtTotalWeightage = new System.Windows.Forms.TextBox();
             this.txtTotalMarks = new System.Windows.Forms.TextBox();
@@ -38,16 +38,18 @@
             this.dtpDateCreated = new System.Windows.Forms.DateTimePicker();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnBackToMain
+            // btnBackTolListOfAddedAssessment
             // 
-            this.btnBackToMain.Location = new System.Drawing.Point(3, -1);
-            this.btnBackToMain.Name = "btnBackToMain";
-            this.btnBackToMain.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToMain.TabIndex = 19;
-            this.btnBackToMain.Text = "<<BACK<<";
-            this.btnBackToMain.UseVisualStyleBackColor = true;
+            this.btnBackTolListOfAddedAssessment.Location = new System.Drawing.Point(150, 0);
+            this.btnBackTolListOfAddedAssessment.Name = "btnBackTolListOfAddedAssessment";
+            this.btnBackTolListOfAddedAssessment.Size = new System.Drawing.Size(75, 23);
+            this.btnBackTolListOfAddedAssessment.TabIndex = 19;
+            this.btnBackTolListOfAddedAssessment.Text = "<<BACK<<";
+            this.btnBackTolListOfAddedAssessment.UseVisualStyleBackColor = true;
+            this.btnBackTolListOfAddedAssessment.Click += new System.EventHandler(this.btnBackTolListOfAddedAssessment_Click);
             // 
             // btnUpdateAssessment
             // 
@@ -123,12 +125,22 @@
             this.lblTitle.TabIndex = 10;
             this.lblTitle.Text = "Title";
             // 
+            // btnBackToMainPage
+            // 
+            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 0);
+            this.btnBackToMainPage.Name = "btnBackToMainPage";
+            this.btnBackToMainPage.Size = new System.Drawing.Size(148, 23);
+            this.btnBackToMainPage.TabIndex = 20;
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
+            this.btnBackToMainPage.UseVisualStyleBackColor = true;
+            // 
             // EditAssessmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBackToMain);
+            this.Controls.Add(this.btnBackToMainPage);
+            this.Controls.Add(this.btnBackTolListOfAddedAssessment);
             this.Controls.Add(this.btnUpdateAssessment);
             this.Controls.Add(this.txtTotalWeightage);
             this.Controls.Add(this.txtTotalMarks);
@@ -148,7 +160,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnBackToMain;
+        private System.Windows.Forms.Button btnBackTolListOfAddedAssessment;
         private System.Windows.Forms.Button btnUpdateAssessment;
         private System.Windows.Forms.TextBox txtTotalWeightage;
         private System.Windows.Forms.TextBox txtTotalMarks;
@@ -158,5 +170,6 @@
         private System.Windows.Forms.DateTimePicker dtpDateCreated;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnBackToMainPage;
     }
 }

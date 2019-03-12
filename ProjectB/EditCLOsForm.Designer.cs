@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.btnUpdateCLOs = new System.Windows.Forms.Button();
             this.dtpUpdatedDate = new System.Windows.Forms.DateTimePicker();
             this.lblCreatedDate = new System.Windows.Forms.Label();
             this.txtCLOName = new System.Windows.Forms.TextBox();
             this.lblCLOName = new System.Windows.Forms.Label();
+            this.btnBackToMainPage = new System.Windows.Forms.Button();
+            this.btnBackTolListOfAddedClos = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnBackToMainPage
-            // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(-1, 1);
-            this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToMainPage.TabIndex = 11;
-            this.btnBackToMainPage.Text = "<<BACK<<";
-            this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click_1);
             // 
             // btnUpdateCLOs
             // 
@@ -88,18 +79,39 @@
             this.lblCLOName.TabIndex = 6;
             this.lblCLOName.Text = "CLO Name";
             // 
-            // CLOsEditInfo
+            // btnBackToMainPage
+            // 
+            this.btnBackToMainPage.Location = new System.Drawing.Point(3, 1);
+            this.btnBackToMainPage.Name = "btnBackToMainPage";
+            this.btnBackToMainPage.Size = new System.Drawing.Size(148, 23);
+            this.btnBackToMainPage.TabIndex = 22;
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
+            this.btnBackToMainPage.UseVisualStyleBackColor = true;
+            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
+            // 
+            // btnBackTolListOfAddedClos
+            // 
+            this.btnBackTolListOfAddedClos.Location = new System.Drawing.Point(151, 1);
+            this.btnBackTolListOfAddedClos.Name = "btnBackTolListOfAddedClos";
+            this.btnBackTolListOfAddedClos.Size = new System.Drawing.Size(75, 23);
+            this.btnBackTolListOfAddedClos.TabIndex = 21;
+            this.btnBackTolListOfAddedClos.Text = "<<BACK<<";
+            this.btnBackTolListOfAddedClos.UseVisualStyleBackColor = true;
+            this.btnBackTolListOfAddedClos.Click += new System.EventHandler(this.btnBackTolListOfAddedClos_Click);
+            // 
+            // EditCLOsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBackToMainPage);
+            this.Controls.Add(this.btnBackTolListOfAddedClos);
             this.Controls.Add(this.btnUpdateCLOs);
             this.Controls.Add(this.dtpUpdatedDate);
             this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.txtCLOName);
             this.Controls.Add(this.lblCLOName);
-            this.Name = "CLOsEditInfo";
+            this.Name = "EditCLOsForm";
             this.Text = "CLOsEditInfo";
             this.Load += new System.EventHandler(this.CLOsEditInfo_Load);
             this.ResumeLayout(false);
@@ -108,12 +120,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.Button btnUpdateCLOs;
         private System.Windows.Forms.DateTimePicker dtpUpdatedDate;
         private System.Windows.Forms.Label lblCreatedDate;
         private System.Windows.Forms.TextBox txtCLOName;
         private System.Windows.Forms.Label lblCLOName;
+        private System.Windows.Forms.Button btnBackToMainPage;
+        private System.Windows.Forms.Button btnBackTolListOfAddedClos;
     }
 }

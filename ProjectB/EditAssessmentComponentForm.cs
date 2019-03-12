@@ -7,14 +7,67 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjectB
 {
     public partial class EditAssessmentComponentForm : Form
     {
+        public int Id;
+        public int RubricId;
+        public int AssessmentId;
+        public EditAssessmentComponentForm(int id,int rubricid,int assessmentid)
+        {
+            Id = id;
+            RubricId = rubricid;
+            AssessmentId = assessmentid;
+            InitializeComponent();
+        }
         public EditAssessmentComponentForm()
         {
             InitializeComponent();
+        }
+        public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
+        private void btnUpdateAssessmentComponent_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection Connection = new SqlConnection(constr);
+            Connection.Open();
+            int a;
+            string Edit_Query = "UPDATE dbo.AssessmentComponent SET Name='" + txtName.Text + "',RubricId='"+RubricId+ "',TotalMarks='"+ Convert.ToInt32(txtTotalMarks.Text) + "',DateCreated='"+DateTime.Today+"',DateUpdated='"+dtpDateUpdated.Value+"',AssessmentId='"+AssessmentId+"'";
+            SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Updated Successfully!");
+        }
+
+        private void EditAssessmentComponentForm_Load(object sender, EventArgs e)
+        {
+
+            SqlConnection Connection = new SqlConnection(constr);
+            Connection.Open();
+            //string Edit_Query = "UPDATE FROM tbl_employees SET emp_name='" + txtname.Text + "',emp_email = '" + txtmail.Text + "',emp_department = '" + txtdept.Text + "',emp_designation = '" + txtdesg.Text + "',emp_joining_date = '" + dtpjoin.Value.ToString("MM/dd/yyyy") + "',emp_salary = '" + Convert.ToDouble(txtsalary.Text) + "'";
+            string Get_Query = "select * FROM dbo.AssessmentComponent  WHERE Id = '" + Id + "'";
+            SqlCommand cmd = new SqlCommand(Get_Query, Connection);
+            var myReader = cmd.ExecuteReader();
+            myReader.Read();
+            txtName.Text = myReader[1].ToString();
+            int j = (int)myReader[3];
+            txtTotalMarks.Text = j.ToString();
+        }
+
+        private void btnBackToMainPage_Click(object sender, EventArgs e)
+        {
+
+            WelcomeForm o = new WelcomeForm();
+            this.Hide();
+            o.Show();
+        }
+
+        private void btnBackToAssessmentComponentList_Click(object sender, EventArgs e)
+        {
+            ListOfAddedAssessmentComponentForm d = new ListOfAddedAssessmentComponentForm();
+            this.Hide();
+            d.Show();
         }
     }
 }

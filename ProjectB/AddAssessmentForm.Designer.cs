@@ -39,6 +39,7 @@
             this.btnADDAssessment = new System.Windows.Forms.Button();
             this.btnBackToMain = new System.Windows.Forms.Button();
             this.btnListOfAddedAssessment = new System.Windows.Forms.Button();
+            this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -117,7 +118,7 @@
             // 
             // btnBackToMain
             // 
-            this.btnBackToMain.Location = new System.Drawing.Point(1, 0);
+            this.btnBackToMain.Location = new System.Drawing.Point(152, 0);
             this.btnBackToMain.Name = "btnBackToMain";
             this.btnBackToMain.Size = new System.Drawing.Size(75, 23);
             this.btnBackToMain.TabIndex = 9;
@@ -127,7 +128,7 @@
             // 
             // btnListOfAddedAssessment
             // 
-            this.btnListOfAddedAssessment.Location = new System.Drawing.Point(457, 406);
+            this.btnListOfAddedAssessment.Location = new System.Drawing.Point(644, 1);
             this.btnListOfAddedAssessment.Name = "btnListOfAddedAssessment";
             this.btnListOfAddedAssessment.Size = new System.Drawing.Size(154, 23);
             this.btnListOfAddedAssessment.TabIndex = 10;
@@ -135,11 +136,22 @@
             this.btnListOfAddedAssessment.UseVisualStyleBackColor = true;
             this.btnListOfAddedAssessment.Click += new System.EventHandler(this.btnListOfAddedAssessment_Click);
             // 
+            // btnBackToMainPage
+            // 
+            this.btnBackToMainPage.Location = new System.Drawing.Point(12, 1);
+            this.btnBackToMainPage.Name = "btnBackToMainPage";
+            this.btnBackToMainPage.Size = new System.Drawing.Size(134, 23);
+            this.btnBackToMainPage.TabIndex = 11;
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
+            this.btnBackToMainPage.UseVisualStyleBackColor = true;
+            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
+            // 
             // AddAssessmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnListOfAddedAssessment);
             this.Controls.Add(this.btnBackToMain);
             this.Controls.Add(this.btnADDAssessment);
@@ -153,6 +165,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "AddAssessmentForm";
             this.Text = "AddAssessmentForm";
+            this.Load += new System.EventHandler(this.AddAssessmentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +184,6 @@
         private System.Windows.Forms.Button btnADDAssessment;
         private System.Windows.Forms.Button btnBackToMain;
         private System.Windows.Forms.Button btnListOfAddedAssessment;
+        private System.Windows.Forms.Button btnBackToMainPage;
     }
 }

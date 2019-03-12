@@ -20,9 +20,7 @@ namespace ProjectB
 
         private void btnaddnewstudent_Click(object sender, EventArgs e)
         {
-            FormAddStudent frm = new FormAddStudent();
-            this.Hide();
-            frm.Show();
+            
         }
 
         private void btnRegisteredStudents_Click(object sender, EventArgs e)
@@ -57,6 +55,34 @@ namespace ProjectB
             AddAssessmentForm a = new AddAssessmentForm();
             this.Hide();
             a.Show();
+        }
+
+        private void btnRubricMenu_Click(object sender, EventArgs e)
+        {
+            ListOfAddedRubricForm r = new ListOfAddedRubricForm();
+            this.Hide();
+            r.Show();
+        }
+
+        private void btnAttendenceMenu_Click(object sender, EventArgs e)
+        {
+            StudentAttendanceForm o = new StudentAttendanceForm();
+            this.Hide();
+            o.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LookupMenuForm f = new LookupMenuForm();
+            this.Hide();
+            f.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormAddStudent frm = new FormAddStudent();
+            this.Hide();
+            frm.Show();
         }
     }
 }

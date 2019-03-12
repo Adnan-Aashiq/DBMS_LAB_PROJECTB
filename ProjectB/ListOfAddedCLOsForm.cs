@@ -76,5 +76,12 @@ namespace ProjectB
                 r.Show();
             }
         }
+
+        private void btnBackToAddStudent_Click(object sender, EventArgs e)
+        {
+            FormAddStudent v = new FormAddStudent();
+            this.Hide();
+            v.Show();
+        }
     }
 }

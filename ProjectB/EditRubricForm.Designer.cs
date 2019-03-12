@@ -32,6 +32,7 @@
             this.txtRubricDetails = new System.Windows.Forms.TextBox();
             this.lblRubricDetails = new System.Windows.Forms.Label();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
+            this.btnBackTolListOfAddedRubric = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -62,23 +63,34 @@
             // 
             // btnBackToMainPage
             // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 2);
+            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 3);
             this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToMainPage.TabIndex = 37;
-            this.btnBackToMainPage.Text = "<<BACK<<";
+            this.btnBackToMainPage.Size = new System.Drawing.Size(148, 23);
+            this.btnBackToMainPage.TabIndex = 42;
+            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
+            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click_1);
+            // 
+            // btnBackTolListOfAddedRubric
+            // 
+            this.btnBackTolListOfAddedRubric.Location = new System.Drawing.Point(150, 3);
+            this.btnBackTolListOfAddedRubric.Name = "btnBackTolListOfAddedRubric";
+            this.btnBackTolListOfAddedRubric.Size = new System.Drawing.Size(75, 23);
+            this.btnBackTolListOfAddedRubric.TabIndex = 41;
+            this.btnBackTolListOfAddedRubric.Text = "<<BACK<<";
+            this.btnBackTolListOfAddedRubric.UseVisualStyleBackColor = true;
+            this.btnBackTolListOfAddedRubric.Click += new System.EventHandler(this.btnBackTolListOfAddedRubric_Click);
             // 
             // EditRubricForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBackToMainPage);
+            this.Controls.Add(this.btnBackTolListOfAddedRubric);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtRubricDetails);
             this.Controls.Add(this.lblRubricDetails);
-            this.Controls.Add(this.btnBackToMainPage);
             this.Name = "EditRubricForm";
             this.Text = "EditRubricForm";
             this.Load += new System.EventHandler(this.EditRubricForm_Load);
@@ -92,5 +104,6 @@
         private System.Windows.Forms.TextBox txtRubricDetails;
         private System.Windows.Forms.Label lblRubricDetails;
         private System.Windows.Forms.Button btnBackToMainPage;
+        private System.Windows.Forms.Button btnBackTolListOfAddedRubric;
     }
 }
