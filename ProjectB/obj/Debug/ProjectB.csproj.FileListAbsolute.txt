@@ -28,4 +28,6 @@ D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.ListOfAddedAssessmentComponentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.ClassAttendanceForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.StudentAttendanceForm.resources
-D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.AddLookupForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.LookupMenuForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.LookupFilterForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.StudentResultForm.resources

@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.lblinfo = new System.Windows.Forms.Label();
-            this.btnCLOMenu = new System.Windows.Forms.Button();
             this.btnAssessmentMenu = new System.Windows.Forms.Button();
             this.btnAttendenceMenu = new System.Windows.Forms.Button();
             this.btnListRubricMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnCLOMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,22 +53,9 @@
             this.lblinfo.TabIndex = 0;
             this.lblinfo.Text = "Student LAB Evaluation System";
             // 
-            // btnCLOMenu
-            // 
-            this.btnCLOMenu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCLOMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCLOMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCLOMenu.Location = new System.Drawing.Point(148, 2);
-            this.btnCLOMenu.Name = "btnCLOMenu";
-            this.btnCLOMenu.Size = new System.Drawing.Size(106, 23);
-            this.btnCLOMenu.TabIndex = 2;
-            this.btnCLOMenu.Text = "CLO Menu";
-            this.btnCLOMenu.UseVisualStyleBackColor = false;
-            this.btnCLOMenu.Click += new System.EventHandler(this.btnAddNewCLO_Click);
-            // 
             // btnAssessmentMenu
             // 
-            this.btnAssessmentMenu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAssessmentMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAssessmentMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAssessmentMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAssessmentMenu.Location = new System.Drawing.Point(256, 2);
@@ -81,7 +68,7 @@
             // 
             // btnAttendenceMenu
             // 
-            this.btnAttendenceMenu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAttendenceMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAttendenceMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAttendenceMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAttendenceMenu.Location = new System.Drawing.Point(386, 2);
@@ -94,7 +81,7 @@
             // 
             // btnListRubricMenu
             // 
-            this.btnListRubricMenu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnListRubricMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnListRubricMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnListRubricMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListRubricMenu.Location = new System.Drawing.Point(537, 2);
@@ -107,7 +94,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(662, 2);
@@ -134,7 +121,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(40, 2);
@@ -145,20 +132,35 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnCLOMenu
+            // 
+            this.btnCLOMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCLOMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCLOMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLOMenu.Location = new System.Drawing.Point(148, 2);
+            this.btnCLOMenu.Name = "btnCLOMenu";
+            this.btnCLOMenu.Size = new System.Drawing.Size(106, 23);
+            this.btnCLOMenu.TabIndex = 22;
+            this.btnCLOMenu.Text = "CLO Menu";
+            this.btnCLOMenu.UseVisualStyleBackColor = false;
+            this.btnCLOMenu.Click += new System.EventHandler(this.btnCLOMenu_Click);
+            // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(873, 408);
+            this.Controls.Add(this.btnCLOMenu);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListRubricMenu);
             this.Controls.Add(this.btnAttendenceMenu);
             this.Controls.Add(this.btnAssessmentMenu);
-            this.Controls.Add(this.btnCLOMenu);
             this.Controls.Add(this.lblinfo);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "WelcomeForm";
             this.Text = "formWelcome";
             this.Load += new System.EventHandler(this.WelcomeForm_Load);
@@ -171,13 +173,13 @@
         #endregion
 
         private System.Windows.Forms.Label lblinfo;
-        private System.Windows.Forms.Button btnCLOMenu;
         private System.Windows.Forms.Button btnAssessmentMenu;
         private System.Windows.Forms.Button btnAttendenceMenu;
         private System.Windows.Forms.Button btnListRubricMenu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCLOMenu;
     }
 }
 

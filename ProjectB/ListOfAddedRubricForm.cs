@@ -50,13 +50,18 @@ namespace ProjectB
             Connection.Open();
             if (e.ColumnIndex == ListOfAddedRubricdataGridView.Columns["btnDelete"].Index)
             {
-                this.ListOfAddedRubricdataGridView.Rows.RemoveAt(e.RowIndex);
-                int row = e.RowIndex;
-                int Id = Convert.ToInt32(ListOfAddedRubricdataGridView.Rows[row].Cells["Id"].Value);
-                string Delete_Query = "DELETE FROM dbo.Rubric  WHERE Id = '" + Id + "'";
-                SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Data has been deleted!");
+                DialogResult result = MessageBox.Show("Do You Want to delete?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (result.Equals(DialogResult.OK))
+                {
+                    this.ListOfAddedRubricdataGridView.Rows.RemoveAt(e.RowIndex);
+                    int row = e.RowIndex;
+                    int Id = Convert.ToInt32(ListOfAddedRubricdataGridView.Rows[row].Cells["Id"].Value);
+                    string Delete_Query = "DELETE FROM dbo.Rubric  WHERE Id = '" + Id + "'";
+                    SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data has been deleted!");
+                }
+                
 
             }
             if (e.ColumnIndex == ListOfAddedRubricdataGridView.Columns["btnEdit"].Index)

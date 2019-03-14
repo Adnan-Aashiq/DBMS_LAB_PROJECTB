@@ -84,5 +84,12 @@ namespace ProjectB
             this.Hide();
             frm.Show();
         }
+
+        private void btnCLOMenu_Click(object sender, EventArgs e)
+        {
+            AddNewCLOsForm d = new AddNewCLOsForm();
+            this.Hide();
+            d.Show();
+        }
     }
 }

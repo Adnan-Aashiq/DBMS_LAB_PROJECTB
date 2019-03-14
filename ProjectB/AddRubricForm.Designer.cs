@@ -33,6 +33,8 @@
             this.txtRubricDetails = new System.Windows.Forms.TextBox();
             this.btnADD = new System.Windows.Forms.Button();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
+            this.lblDetails = new System.Windows.Forms.Label();
+            this.cmbboxDetails = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnBackToAddedCloList
@@ -57,8 +59,9 @@
             // txtRubricDetails
             // 
             this.txtRubricDetails.Location = new System.Drawing.Point(455, 127);
+            this.txtRubricDetails.Multiline = true;
             this.txtRubricDetails.Name = "txtRubricDetails";
-            this.txtRubricDetails.Size = new System.Drawing.Size(100, 20);
+            this.txtRubricDetails.Size = new System.Drawing.Size(100, 51);
             this.txtRubricDetails.TabIndex = 34;
             // 
             // btnADD
@@ -80,11 +83,31 @@
             this.btnBackToMainPage.Text = "<<Back To Main Page<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
             // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.Location = new System.Drawing.Point(294, 75);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(63, 13);
+            this.lblDetails.TabIndex = 37;
+            this.lblDetails.Text = "CLO Details";
+            // 
+            // cmbboxDetails
+            // 
+            this.cmbboxDetails.FormattingEnabled = true;
+            this.cmbboxDetails.Location = new System.Drawing.Point(434, 67);
+            this.cmbboxDetails.Name = "cmbboxDetails";
+            this.cmbboxDetails.Size = new System.Drawing.Size(121, 21);
+            this.cmbboxDetails.TabIndex = 38;
+            // 
             // AddRubricForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbboxDetails);
+            this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnADD);
             this.Controls.Add(this.txtRubricDetails);
@@ -105,5 +128,7 @@
         private System.Windows.Forms.TextBox txtRubricDetails;
         private System.Windows.Forms.Button btnADD;
         private System.Windows.Forms.Button btnBackToMainPage;
+        private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.ComboBox cmbboxDetails;
     }
 }

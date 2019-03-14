@@ -58,6 +58,12 @@
     <Compile Include="AddAssessmentForm.Designer.cs">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LookupFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupFilterForm.Designer.cs">
+      <DependentUpon>LookupFilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LookupMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     <EmbeddedResource Include="AddAssessmentForm.resx">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LookupFilterForm.resx">
+      <DependentUpon>LookupFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LookupMenuForm.resx">
       <DependentUpon>LookupMenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +258,9 @@
     <EmbeddedResource Include="StudentAttendanceForm.resx">
       <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentResultForm.resx">
+      <DependentUpon>StudentResultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +273,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\DataSources\RegisteredStudents.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

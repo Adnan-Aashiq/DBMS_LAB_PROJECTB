@@ -92,18 +92,20 @@
             // 
             // btnAddedCLOs
             // 
+            this.btnAddedCLOs.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAddedCLOs.Location = new System.Drawing.Point(659, 0);
             this.btnAddedCLOs.Name = "btnAddedCLOs";
             this.btnAddedCLOs.Size = new System.Drawing.Size(141, 23);
             this.btnAddedCLOs.TabIndex = 6;
             this.btnAddedCLOs.Text = "List Of Added CLOs";
-            this.btnAddedCLOs.UseVisualStyleBackColor = true;
+            this.btnAddedCLOs.UseVisualStyleBackColor = false;
             this.btnAddedCLOs.Click += new System.EventHandler(this.btnAddedCLOs_Click);
             // 
             // AddNewCLOsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAddedCLOs);
             this.Controls.Add(this.btnBackToMainPage);

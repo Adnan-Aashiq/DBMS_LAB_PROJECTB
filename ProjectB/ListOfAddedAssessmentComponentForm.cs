@@ -20,17 +20,22 @@ namespace ProjectB
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void ListOfAddedAssessmentComponentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            SqlConnection Connection = new SqlConnection(constr);
-            Connection.Open();
-            if (e.ColumnIndex == ListOfAddedAssessmentComponentDataGridView.Columns["btnDelete"].Index)
+            DialogResult result = MessageBox.Show("Do You Want to delete?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.OK))
             {
-                this.ListOfAddedAssessmentComponentDataGridView.Rows.RemoveAt(e.RowIndex);
-                int row = e.RowIndex;
-                int Id = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["Id"].Value);
-                string Delete_Query = "DELETE FROM dbo.AssessmentComponent  WHERE Id = '" + Id + "'";
-                SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Data has been deleted!");
+                SqlConnection Connection = new SqlConnection(constr);
+                Connection.Open();
+                if (e.ColumnIndex == ListOfAddedAssessmentComponentDataGridView.Columns["btnDelete"].Index)
+                {
+                    this.ListOfAddedAssessmentComponentDataGridView.Rows.RemoveAt(e.RowIndex);
+                    int row = e.RowIndex;
+                    int Id = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["Id"].Value);
+                    string Delete_Query = "DELETE FROM dbo.AssessmentComponent  WHERE Id = '" + Id + "'";
+                    SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data has been deleted!");
+                }
+            
 
             }
             if (e.ColumnIndex == ListOfAddedAssessmentComponentDataGridView.Columns["btnEdit"].Index)

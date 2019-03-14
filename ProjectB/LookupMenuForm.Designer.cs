@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblSelectName = new System.Windows.Forms.Label();
             this.cmbboxCategory = new System.Windows.Forms.ComboBox();
-            this.lblCategory = new System.Windows.Forms.Label();
+            this.lblSelectCategory = new System.Windows.Forms.Label();
             this.btnBackToMain = new System.Windows.Forms.Button();
             this.btnADD = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbboxSelectName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // lblName
+            // lblSelectName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(291, 173);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name";
+            this.lblSelectName.AutoSize = true;
+            this.lblSelectName.Location = new System.Drawing.Point(291, 173);
+            this.lblSelectName.Name = "lblSelectName";
+            this.lblSelectName.Size = new System.Drawing.Size(68, 13);
+            this.lblSelectName.TabIndex = 0;
+            this.lblSelectName.Text = "Select Name";
             // 
             // cmbboxCategory
             // 
@@ -57,14 +57,14 @@
             this.cmbboxCategory.TabIndex = 1;
             this.cmbboxCategory.SelectedIndexChanged += new System.EventHandler(this.cmbboxCategory_SelectedIndexChanged);
             // 
-            // lblCategory
+            // lblSelectCategory
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(280, 123);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(49, 13);
-            this.lblCategory.TabIndex = 3;
-            this.lblCategory.Text = "Category";
+            this.lblSelectCategory.AutoSize = true;
+            this.lblSelectCategory.Location = new System.Drawing.Point(280, 123);
+            this.lblSelectCategory.Name = "lblSelectCategory";
+            this.lblSelectCategory.Size = new System.Drawing.Size(82, 13);
+            this.lblSelectCategory.TabIndex = 3;
+            this.lblSelectCategory.Text = "Select Category";
             // 
             // btnBackToMain
             // 
@@ -78,7 +78,7 @@
             // 
             // btnADD
             // 
-            this.btnADD.Location = new System.Drawing.Point(428, 236);
+            this.btnADD.Location = new System.Drawing.Point(414, 236);
             this.btnADD.Name = "btnADD";
             this.btnADD.Size = new System.Drawing.Size(107, 23);
             this.btnADD.TabIndex = 14;
@@ -86,29 +86,30 @@
             this.btnADD.UseVisualStyleBackColor = true;
             this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
-            // comboBox1
+            // cmbboxSelectName
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbboxSelectName.FormattingEnabled = true;
+            this.cmbboxSelectName.Items.AddRange(new object[] {
             "ATTENDANCE_STATUS",
             "STUDENT_STATUS"});
-            this.comboBox1.Location = new System.Drawing.Point(414, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmbboxSelectName.Location = new System.Drawing.Point(414, 173);
+            this.cmbboxSelectName.Name = "cmbboxSelectName";
+            this.cmbboxSelectName.Size = new System.Drawing.Size(121, 21);
+            this.cmbboxSelectName.TabIndex = 15;
             // 
-            // AddLookupForm
+            // LookupMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbboxSelectName);
             this.Controls.Add(this.btnADD);
             this.Controls.Add(this.btnBackToMain);
-            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.lblSelectCategory);
             this.Controls.Add(this.cmbboxCategory);
-            this.Controls.Add(this.lblName);
-            this.Name = "AddLookupForm";
+            this.Controls.Add(this.lblSelectName);
+            this.Name = "LookupMenuForm";
             this.Text = "AddLookupForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,11 +118,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblSelectName;
         private System.Windows.Forms.ComboBox cmbboxCategory;
-        private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.Label lblSelectCategory;
         private System.Windows.Forms.Button btnBackToMain;
         private System.Windows.Forms.Button btnADD;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbboxSelectName;
     }
 }

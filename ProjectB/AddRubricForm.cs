@@ -48,7 +48,21 @@ namespace ProjectB
 
         private void AddRubricForm_Load(object sender, EventArgs e)
         {
+            SqlConnection c = new SqlConnection(constr);
+            c.Open();
+            if (c.State == ConnectionState.Open)
+            {
+                string query = "select * from dbo.Clo";
+                SqlCommand cmd = new SqlCommand(query, c);
 
+                SqlDataReader Details = cmd.ExecuteReader();
+                while (Details.Read())
+                {
+                    cmbboxDetails.Items.Add(Details[1].ToString());
+                }
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

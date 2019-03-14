@@ -26,27 +26,44 @@ namespace ProjectB
 
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
-        private void btnADD_Click(object sender, EventArgs e)
+        //private void btnADD_Click(object sender, EventArgs e)
+        //{
+        //    SqlConnection c = new SqlConnection(constr);
+        //    c.Open();
+        //    if (c.State == ConnectionState.Open)
+        //    {
+        //        string Query = "insert into Lookup(Name,Category) values('" + cmbboxSelectName.Text + "','" + cmbboxCategory.Text + "')";
+        //        SqlCommand cmd = new SqlCommand(Query, c);
+        //        cmd.ExecuteNonQuery();
+        //        MessageBox.Show("Lookup is Added");
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Lookup is not Added");
+
+        //    }
+        //}
+        private string[] comboBox2RangeA = new[] { "Active", "InActive" };
+        private string[] comboBox2RangeB = new[] { "Presenr", "Absent","Leave","Late" };
+        private void cmbboxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection c = new SqlConnection(constr);
-            c.Open();
-            if (c.State == ConnectionState.Open)
+            cmbboxSelectName.Items.Clear();
+            if (cmbboxCategory.Text == "STUDENT_STATUS")
             {
-                string Query = "insert into Lookup(Name,Category) values('" + txtName.Text + "','" + cmbboxCategory.Text + "')";
-                SqlCommand cmd = new SqlCommand(Query, c);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Lookup is Added");
+                cmbboxSelectName.Items.AddRange(comboBox2RangeA);
             }
             else
             {
-                MessageBox.Show("Lookup is not Added");
-
+                cmbboxSelectName.Items.AddRange(comboBox2RangeB);
             }
         }
 
-        private void cmbboxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnADD_Click(object sender, EventArgs e)
         {
-
+            LookupFilterForm o = new LookupFilterForm();
+            this.Hide();
+            o.Show();
+            
         }
     }
 }

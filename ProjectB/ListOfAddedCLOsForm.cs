@@ -50,13 +50,17 @@ namespace ProjectB
             Connection.Open();
             if (e.ColumnIndex == CLOsDataGridView.Columns["btnDelete"].Index)
             {
-                this.CLOsDataGridView.Rows.RemoveAt(e.RowIndex);
-                int row = e.RowIndex;
-                int Id = Convert.ToInt32(CLOsDataGridView.Rows[row].Cells["Id"].Value);
-                string Delete_Query = "DELETE FROM dbo.Clo  WHERE Id = '" + Id + "'";
-                SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Data has been deleted!");
+                DialogResult result = MessageBox.Show("Do You Want to delete?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (result.Equals(DialogResult.OK))
+                {
+                    this.CLOsDataGridView.Rows.RemoveAt(e.RowIndex);
+                    int row = e.RowIndex;
+                    int Id = Convert.ToInt32(CLOsDataGridView.Rows[row].Cells["Id"].Value);
+                    string Delete_Query = "DELETE FROM dbo.Clo  WHERE Id = '" + Id + "'";
+                    SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data has been deleted!");
+                }
 
             }
             if (e.ColumnIndex == CLOsDataGridView.Columns["btnEdit"].Index)
@@ -79,7 +83,7 @@ namespace ProjectB
 
         private void btnBackToAddStudent_Click(object sender, EventArgs e)
         {
-            FormAddStudent v = new FormAddStudent();
+            AddNewCLOsForm v = new AddNewCLOsForm();
             this.Hide();
             v.Show();
         }
