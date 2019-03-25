@@ -54,7 +54,6 @@ namespace ProjectB
             {
                 string query = "select * from dbo.Clo";
                 SqlCommand cmd = new SqlCommand(query, c);
-
                 SqlDataReader Details = cmd.ExecuteReader();
                 while (Details.Read())
                 {
@@ -70,6 +69,13 @@ namespace ProjectB
             ListOfAddedRubricForm f = new ListOfAddedRubricForm(id);
             this.Hide();
             f.Show();
+        }
+
+        private void btnBackToMainPage_Click_1(object sender, EventArgs e)
+        {
+            WelcomeForm y = new WelcomeForm();
+            this.Hide();
+            y.Show();
         }
     }
 }

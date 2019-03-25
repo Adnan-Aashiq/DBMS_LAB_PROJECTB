@@ -34,15 +34,10 @@ namespace ProjectB
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void btnUpdate_Click(object sender, EventArgs e)
-        {
+        { 
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            //string query = "select * from dbo.Rubric WHERE Id = '" + Id + "'";
-            //SqlCommand t = new SqlCommand(query, Connection);
-            //var r=t.ExecuteReader();
-            //int o = r.GetInt32(2);
-            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" + a + "'  WHERE Id = '" + Id + "'";
-            //string Get_Query = "select * from tbl_employees where emp_id = '" + Id + "'";
+            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" + cmbboxListfAddedCLOIds.SelectedItem + "'  WHERE Id = '" + Id + "'";
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
@@ -51,6 +46,30 @@ namespace ProjectB
         private void EditRubricForm_Load(object sender, EventArgs e)
         {
 
+            SqlConnection c = new SqlConnection(constr);
+            c.Open();
+            if (c.State == ConnectionState.Open)
+            {
+                string query = "select * from dbo.Clo";
+                SqlCommand t = new SqlCommand(query, c);
+
+                SqlDataReader Details = t.ExecuteReader();
+                while (Details.Read())
+                {
+                    cmbboxListfAddedCLOIds.Items.Add(Details[0].ToString());
+                }
+
+
+            }
+            c.Close();
+            SqlConnection x = new SqlConnection(constr);
+            x.Open();
+            string Get_Query = "select * FROM dbo.Rubric  WHERE Id = '" + Id + "'";
+            SqlCommand cmd = new SqlCommand(Get_Query, x);
+            var Reader = cmd.ExecuteReader();
+            Reader.Read();
+            txtRubricDetails.Text = Reader[1].ToString();
+            x.Close();
         }
 
         private void btnBackToMainPage_Click_1(object sender, EventArgs e)

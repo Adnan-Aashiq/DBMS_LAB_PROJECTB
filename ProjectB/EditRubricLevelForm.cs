@@ -41,9 +41,22 @@ namespace ProjectB
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void EditRubricLevelForm_Load(object sender, EventArgs e)
         {
+            SqlConnection c = new SqlConnection(constr);
+            c.Open();
+            if (c.State == ConnectionState.Open)
+            {
+                string query = "select * from dbo.Rubric";
+                SqlCommand t = new SqlCommand(query, c);
+
+                SqlDataReader Details = t.ExecuteReader();
+                while (Details.Read())
+                {
+                    cmbboxListfAddedRubricIds.Items.Add(Details[0].ToString());
+                }
+            }
+            c.Close();
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            //string Edit_Query = "UPDATE FROM tbl_employees SET emp_name='" + txtname.Text + "',emp_email = '" + txtmail.Text + "',emp_department = '" + txtdept.Text + "',emp_designation = '" + txtdesg.Text + "',emp_joining_date = '" + dtpjoin.Value.ToString("MM/dd/yyyy") + "',emp_salary = '" + Convert.ToDouble(txtsalary.Text) + "'";
             string Get_Query = "select * FROM dbo.RubricLevel  WHERE Id = '" + Id + "'";
             SqlCommand cmd = new SqlCommand(Get_Query, Connection);
             var myReader = cmd.ExecuteReader();
@@ -55,14 +68,10 @@ namespace ProjectB
 
         private void btnUpdateRubricLevel_Click(object sender, EventArgs e)
         {
+
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            //string query = "select * from dbo.Rubric WHERE Id = '" + Id + "'";
-            //SqlCommand t = new SqlCommand(query, Connection);
-            //var r = t.ExecuteReader();
-            //int o = r.GetInt32(0);
-            string Edit_Query = "UPDATE dbo.RubricLevel SET RubricId='"+CloId+"', Details='" + txtDetails.Text + "', MeasurementLevel = '" + Convert.ToInt32(txtMeasurementLevel.Text) + "' ";
-            //string Get_Query = "select * from tbl_employees where emp_id = '" + Id + "'";
+            string Edit_Query = "UPDATE dbo.RubricLevel SET RubricId ='"+Convert.ToInt32(cmbboxListfAddedRubricIds.Items)+"' ,Details= '" + txtDetails.Text + "', MeasurementLevel = '" + Convert.ToInt32(txtMeasurementLevel.Text) + "' ";
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");

@@ -33,6 +33,8 @@
             this.lblRubricDetails = new System.Windows.Forms.Label();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.btnBackTolListOfAddedRubric = new System.Windows.Forms.Button();
+            this.cmbboxListfAddedCLOIds = new System.Windows.Forms.ComboBox();
+            this.lblCLOIds = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -81,12 +83,31 @@
             this.btnBackTolListOfAddedRubric.UseVisualStyleBackColor = true;
             this.btnBackTolListOfAddedRubric.Click += new System.EventHandler(this.btnBackTolListOfAddedRubric_Click);
             // 
+            // cmbboxListfAddedCLOIds
+            // 
+            this.cmbboxListfAddedCLOIds.FormattingEnabled = true;
+            this.cmbboxListfAddedCLOIds.Location = new System.Drawing.Point(434, 68);
+            this.cmbboxListfAddedCLOIds.Name = "cmbboxListfAddedCLOIds";
+            this.cmbboxListfAddedCLOIds.Size = new System.Drawing.Size(121, 21);
+            this.cmbboxListfAddedCLOIds.TabIndex = 43;
+            // 
+            // lblCLOIds
+            // 
+            this.lblCLOIds.AutoSize = true;
+            this.lblCLOIds.Location = new System.Drawing.Point(294, 68);
+            this.lblCLOIds.Name = "lblCLOIds";
+            this.lblCLOIds.Size = new System.Drawing.Size(76, 13);
+            this.lblCLOIds.TabIndex = 44;
+            this.lblCLOIds.Text = "List of CLO Ids";
+            // 
             // EditRubricForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCLOIds);
+            this.Controls.Add(this.cmbboxListfAddedCLOIds);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnBackTolListOfAddedRubric);
             this.Controls.Add(this.btnUpdate);
@@ -106,5 +127,7 @@
         private System.Windows.Forms.Label lblRubricDetails;
         private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.Button btnBackTolListOfAddedRubric;
+        private System.Windows.Forms.ComboBox cmbboxListfAddedCLOIds;
+        private System.Windows.Forms.Label lblCLOIds;
     }
 }

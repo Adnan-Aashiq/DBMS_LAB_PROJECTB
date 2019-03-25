@@ -31,3 +31,40 @@ D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.LookupMenuForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.LookupFilterForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB\ProjectB\obj\Debug\ProjectB.StudentResultForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\ProjectB.exe.config
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\ProjectB.exe
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\ProjectB.pdb
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.Design.dll
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.dll
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.Fonts.dll
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csprojAssemblyReference.cache
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddAssessmentComponentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddAssessmentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupFilterForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupMenuForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddNewCLOsForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddRubricForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddRubricLevelForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.FormAddStudent.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ClassAttendanceForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentComponentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditCLOsForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditRubricForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditRubricLevelForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedAssessmentComponentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedAssessmentsForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedCLOsForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedRubricForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedRubricLevelForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedStudentsForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditStudentForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentAttendanceForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentResultForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.WelcomeForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.Properties.Resources.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csproj.GenerateResource.cache
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csproj.CoreCompileInputs.cache
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csproj.CopyComplete
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.exe
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.pdb

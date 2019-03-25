@@ -35,6 +35,8 @@
             this.txtDetails = new System.Windows.Forms.TextBox();
             this.btnUpdateRubricLevel = new System.Windows.Forms.Button();
             this.lblDetails = new System.Windows.Forms.Label();
+            this.lblRubricIds = new System.Windows.Forms.Label();
+            this.cmbboxListfAddedRubricIds = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnBackToMainPage
@@ -60,7 +62,7 @@
             // lblMeasurementLevel
             // 
             this.lblMeasurementLevel.AutoSize = true;
-            this.lblMeasurementLevel.Location = new System.Drawing.Point(323, 177);
+            this.lblMeasurementLevel.Location = new System.Drawing.Point(323, 207);
             this.lblMeasurementLevel.Name = "lblMeasurementLevel";
             this.lblMeasurementLevel.Size = new System.Drawing.Size(100, 13);
             this.lblMeasurementLevel.TabIndex = 11;
@@ -68,14 +70,14 @@
             // 
             // txtMeasurementLevel
             // 
-            this.txtMeasurementLevel.Location = new System.Drawing.Point(458, 174);
+            this.txtMeasurementLevel.Location = new System.Drawing.Point(458, 204);
             this.txtMeasurementLevel.Name = "txtMeasurementLevel";
             this.txtMeasurementLevel.Size = new System.Drawing.Size(100, 20);
             this.txtMeasurementLevel.TabIndex = 10;
             // 
             // txtDetails
             // 
-            this.txtDetails.Location = new System.Drawing.Point(458, 84);
+            this.txtDetails.Location = new System.Drawing.Point(458, 139);
             this.txtDetails.Name = "txtDetails";
             this.txtDetails.Size = new System.Drawing.Size(100, 20);
             this.txtDetails.TabIndex = 9;
@@ -93,11 +95,28 @@
             // lblDetails
             // 
             this.lblDetails.AutoSize = true;
-            this.lblDetails.Location = new System.Drawing.Point(323, 91);
+            this.lblDetails.Location = new System.Drawing.Point(323, 146);
             this.lblDetails.Name = "lblDetails";
             this.lblDetails.Size = new System.Drawing.Size(39, 13);
             this.lblDetails.TabIndex = 7;
             this.lblDetails.Text = "Details";
+            // 
+            // lblRubricIds
+            // 
+            this.lblRubricIds.AutoSize = true;
+            this.lblRubricIds.Location = new System.Drawing.Point(297, 76);
+            this.lblRubricIds.Name = "lblRubricIds";
+            this.lblRubricIds.Size = new System.Drawing.Size(86, 13);
+            this.lblRubricIds.TabIndex = 46;
+            this.lblRubricIds.Text = "List of Rubric Ids";
+            // 
+            // cmbboxListfAddedRubricIds
+            // 
+            this.cmbboxListfAddedRubricIds.FormattingEnabled = true;
+            this.cmbboxListfAddedRubricIds.Location = new System.Drawing.Point(437, 76);
+            this.cmbboxListfAddedRubricIds.Name = "cmbboxListfAddedRubricIds";
+            this.cmbboxListfAddedRubricIds.Size = new System.Drawing.Size(121, 21);
+            this.cmbboxListfAddedRubricIds.TabIndex = 45;
             // 
             // EditRubricLevelForm
             // 
@@ -105,6 +124,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblRubricIds);
+            this.Controls.Add(this.cmbboxListfAddedRubricIds);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnBackToAddedRubrics);
             this.Controls.Add(this.lblMeasurementLevel);
@@ -129,5 +150,7 @@
         private System.Windows.Forms.TextBox txtDetails;
         private System.Windows.Forms.Button btnUpdateRubricLevel;
         private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.Label lblRubricIds;
+        private System.Windows.Forms.ComboBox cmbboxListfAddedRubricIds;
     }
 }

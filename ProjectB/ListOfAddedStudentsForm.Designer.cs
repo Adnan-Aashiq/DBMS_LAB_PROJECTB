@@ -30,9 +30,9 @@
         {
             this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnBackToAddStudent = new System.Windows.Forms.Button();
+            this.btnInActive = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,27 +50,13 @@
             // 
             this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnDelete,
+            this.btnInActive,
             this.btnEdit});
             this.StudentDataGridView.Location = new System.Drawing.Point(91, 87);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.Size = new System.Drawing.Size(616, 282);
             this.StudentDataGridView.TabIndex = 1;
             this.StudentDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellContentClick);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.HeaderText = "Delete";
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseColumnTextForButtonValue = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.HeaderText = "Edit";
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseColumnTextForButtonValue = true;
             // 
             // btnBackToAddStudent
             // 
@@ -81,6 +67,20 @@
             this.btnBackToAddStudent.Text = "<<BACK<<";
             this.btnBackToAddStudent.UseVisualStyleBackColor = true;
             this.btnBackToAddStudent.Click += new System.EventHandler(this.btnBackToAddStudent_Click);
+            // 
+            // btnInActive
+            // 
+            this.btnInActive.HeaderText = "InActive";
+            this.btnInActive.Name = "btnInActive";
+            this.btnInActive.Text = "InActive";
+            this.btnInActive.UseColumnTextForButtonValue = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.HeaderText = "Edit";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseColumnTextForButtonValue = true;
             // 
             // ListOfAddedStudentsForm
             // 
@@ -103,8 +103,8 @@
 
         private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.DataGridView StudentDataGridView;
-        private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
-        private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
         private System.Windows.Forms.Button btnBackToAddStudent;
+        private System.Windows.Forms.DataGridViewButtonColumn btnInActive;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
     }
 }

@@ -49,22 +49,14 @@ namespace ProjectB
         {
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            if (e.ColumnIndex == StudentDataGridView.Columns["btnDelete"].Index)
+            if (e.ColumnIndex == StudentDataGridView.Columns["btnInActive"].Index)
             {
-                // this.StudentDataGridView.Rows.RemoveAt(e.RowIndex);
-                DialogResult result = MessageBox.Show("Do You Want to delete?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                if (result.Equals(DialogResult.OK))
-                {
-                    int row = e.RowIndex;
-                    int Id = Convert.ToInt32(StudentDataGridView.Rows[row].Cells["Id"].Value);
-                    string Delete_Query = "DELETE FROM dbo.Student  WHERE Id = '" + Id + "'";
-                    SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Data has been deleted!");
-                }
-                
-                
-
+                int row = e.RowIndex;
+                int Id = Convert.ToInt32(StudentDataGridView.Rows[row].Cells["Id"].Value);
+                string Delete_Query = "UPDATE dbo.Student SET Status='"+6+"'  WHERE Id = '" + Id + "'";
+                SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data has been InActivated");
             }
             if (e.ColumnIndex == StudentDataGridView.Columns["btnEdit"].Index)
             {

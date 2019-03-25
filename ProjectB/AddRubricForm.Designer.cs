@@ -82,6 +82,7 @@
             this.btnBackToMainPage.TabIndex = 36;
             this.btnBackToMainPage.Text = "<<Back To Main Page<<";
             this.btnBackToMainPage.UseVisualStyleBackColor = true;
+            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click_1);
             // 
             // lblDetails
             // 
