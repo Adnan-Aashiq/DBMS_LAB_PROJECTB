@@ -26,72 +26,174 @@ namespace ProjectB
             o.Show();
         }
 
-        private void btnViewClassAttendence_Click(object sender, EventArgs e)
-        {
-            ClassAttendanceForm c = new ClassAttendanceForm();
-            this.Hide();
-            c.Show();
-        }
+      
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void StudentAttendanceForm_Load(object sender, EventArgs e)
         {
-            SqlConnection c = new SqlConnection(constr);
-            c.Open();
-            if (c.State == ConnectionState.Open)
-            {
-                string query = "select * from dbo.Student";
-                SqlCommand cmd = new SqlCommand(query, c);
-
-                SqlDataReader ListOfRegistrationNumbers = cmd.ExecuteReader();
-                while (ListOfRegistrationNumbers.Read())
-                {
-                    cmbboxStudentRegistrationNumbers.Items.Add(ListOfRegistrationNumbers[5].ToString());
-                }
-
-
-            }
+            
         }
 
         private void btnMarkAttendence_Click(object sender, EventArgs e)
         {
+            int StudentID=0;
+            int Status = 0;
+            foreach (DataGridViewRow Row in metroGridListOfAddedStudents.Rows)
+            {
+                if (Row.Cells[0].Value != null)
+                {
+                    if ((bool)(Row.Cells[0].Value) == true)
+                    {
+                        Status = 1;
+                        StudentID = Convert.ToInt32(metroGridListOfAddedStudents.Rows[Row.Index].Cells["Id"].Value.ToString());
+                        SqlConnection t = new SqlConnection(constr);
+                        t.Open();
+                        if (t.State == ConnectionState.Open)
+                        {
+                            string query = "insert into dbo.StudentAttendance(AttendanceId,StudentId,AttendanceStatus) values('" + atndid + "','" + StudentID + "','" + Status + "')";
+                            SqlCommand cmd = new SqlCommand(query, t);
+                            cmd.ExecuteNonQuery();
+                            
+                        }
+                        else
+                        {
+                           
+                        }
+                        t.Close();
+
+                    }
+                }
+
+                if (Row.Cells[1].Value != null)
+                {
+                    if ((bool)(Row.Cells[1].Value) == true)
+                    {
+                        Status = 2;
+                        StudentID = Convert.ToInt32(metroGridListOfAddedStudents.Rows[Row.Index].Cells["Id"].Value.ToString());
+                        SqlConnection t = new SqlConnection(constr);
+                        t.Open();
+                        if (t.State == ConnectionState.Open)
+                        {
+                            string query = "insert into dbo.StudentAttendance(AttendanceId,StudentId,AttendanceStatus) values('" + atndid + "','" + StudentID + "','" + Status + "')";
+                            SqlCommand cmd = new SqlCommand(query, t);
+                            cmd.ExecuteNonQuery();
+                            
+                        }
+                        else
+                        {
+                            
+                        }
+                        t.Close();
+
+                    }
+                }
+                if (Row.Cells[2].Value != null)
+                {
+                    if ((bool)(Row.Cells[2].Value) == true)
+                    {
+                        Status = 3;
+                        StudentID = Convert.ToInt32(metroGridListOfAddedStudents.Rows[Row.Index].Cells["Id"].Value.ToString());
+                        SqlConnection t = new SqlConnection(constr);
+                        t.Open();
+                        if (t.State == ConnectionState.Open)
+                        {
+                            string query = "insert into dbo.StudentAttendance(AttendanceId,StudentId,AttendanceStatus) values('" + atndid + "','" + StudentID + "','" + Status + "')";
+                            SqlCommand cmd = new SqlCommand(query, t);
+                            cmd.ExecuteNonQuery();
+                            
+                        }
+                        else
+                        {
+                            
+                        }
+                        t.Close();
+
+                    }
+                }
+                if (Row.Cells[3].Value != null)
+                {
+                    if ((bool)(Row.Cells[3].Value) == true)
+                    {
+                        Status = 4;
+                        StudentID = Convert.ToInt32(metroGridListOfAddedStudents.Rows[Row.Index].Cells["Id"].Value.ToString());
+                        SqlConnection t = new SqlConnection(constr);
+                        t.Open();
+                        if (t.State == ConnectionState.Open)
+                        {
+                            string query = "insert into dbo.StudentAttendance(AttendanceId,StudentId,AttendanceStatus) values('" + atndid + "','" + StudentID + "','" + Status + "')";
+                            SqlCommand cmd = new SqlCommand(query, t);
+                            cmd.ExecuteNonQuery();
+                            
+                        }
+                        else
+                        {
+                           
+                        }
+                        t.Close();
+                    }
+                }
+                
+            }
+            MessageBox.Show("Student Attendence is Marked");
+
+
+        }
+
+        private void metroGridListOfAddedStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnViewListOfAddedStudents_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT Id,RegistrationNumber,FirstName FROM dbo.Student", con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            metroGridListOfAddedStudents.DataSource = dt;
+                        }
+                    }
+                }
+            }
+        }
+        public int atndid;
+        private void dtpAttendenceDate_ValueChanged(object sender, EventArgs e)
+        {
+            
             SqlConnection c = new SqlConnection(constr);
             c.Open();
             if (c.State == ConnectionState.Open)
             {
-                string TextOfComboBox = cmbboxStudentRegistrationNumbers.Text;
-                string registrationnumber = "select Id from dbo.Student where RegistrationNumber= '" + TextOfComboBox + "'   ";
-                SqlCommand t = new SqlCommand(registrationnumber, c);
-                var r = t.ExecuteReader();
-                r.Read();
-                int StudentID = r.GetInt32(0);
-                r.Close();
-                int a;
-                if (cmbboxAttendenceStatus.Text == "Present")
-                {
-                    a = 1;
-                }
-                else if(cmbboxAttendenceStatus.Text == "Absent")
-                {
-                    a = 2;
-                }
-                else if (cmbboxAttendenceStatus.Text == "Leave")
-                {
-                    a = 3;
-                }
-                else
-                {
-                    a = 4;
-                }
-                string Query = "insert into dbo.StudentAttendance(StudentId,AttendanceStatus) values('" + StudentID + "','" +a  + "')";
+                string Query = "insert into dbo.ClassAttendance(AttendanceDate) values('" + dtpAttendenceDate.Value + "')";
                 SqlCommand cmd = new SqlCommand(Query, c);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Attendence is marked");
+
+                SqlCommand cmd2 = new SqlCommand("select * from ClassAttendance where AttendanceDate ='" + dtpAttendenceDate.Value + "'",c);
+                var reader = cmd2.ExecuteReader();
+                reader.Read();
+                atndid= reader.GetInt32(0);
+                
+
             }
             else
             {
-                MessageBox.Show("Attendence is marked");
 
             }
+            c.Close();
+
+
+        }
+
+        private void btnStudentAttendenceRecord_Click(object sender, EventArgs e)
+        {
+            StudentAttendenceRecordForm t = new StudentAttendenceRecordForm();
+            this.Hide();
+            t.Show();
         }
     }
 }

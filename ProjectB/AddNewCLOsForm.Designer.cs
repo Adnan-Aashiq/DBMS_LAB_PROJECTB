@@ -35,6 +35,12 @@
             this.btnAddCLOs = new System.Windows.Forms.Button();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.btnAddedCLOs = new System.Windows.Forms.Button();
+            this.btnAddNewCLO = new System.Windows.Forms.Button();
+            this.CLOsDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAddRubric = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCLOName
@@ -93,7 +99,7 @@
             // btnAddedCLOs
             // 
             this.btnAddedCLOs.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAddedCLOs.Location = new System.Drawing.Point(659, 0);
+            this.btnAddedCLOs.Location = new System.Drawing.Point(430, 0);
             this.btnAddedCLOs.Name = "btnAddedCLOs";
             this.btnAddedCLOs.Size = new System.Drawing.Size(141, 23);
             this.btnAddedCLOs.TabIndex = 6;
@@ -101,12 +107,58 @@
             this.btnAddedCLOs.UseVisualStyleBackColor = false;
             this.btnAddedCLOs.Click += new System.EventHandler(this.btnAddedCLOs_Click);
             // 
+            // btnAddNewCLO
+            // 
+            this.btnAddNewCLO.Location = new System.Drawing.Point(329, 0);
+            this.btnAddNewCLO.Name = "btnAddNewCLO";
+            this.btnAddNewCLO.Size = new System.Drawing.Size(95, 23);
+            this.btnAddNewCLO.TabIndex = 7;
+            this.btnAddNewCLO.Text = "Add New CLO";
+            this.btnAddNewCLO.UseVisualStyleBackColor = true;
+            this.btnAddNewCLO.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CLOsDataGridView
+            // 
+            this.CLOsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CLOsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnDelete,
+            this.btnEdit,
+            this.btnAddRubric});
+            this.CLOsDataGridView.Location = new System.Drawing.Point(139, 93);
+            this.CLOsDataGridView.Name = "CLOsDataGridView";
+            this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
+            this.CLOsDataGridView.TabIndex = 8;
+            this.CLOsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CLOsDataGridView_CellContentClick);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.HeaderText = "Delete";
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseColumnTextForButtonValue = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.HeaderText = "Edit";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseColumnTextForButtonValue = true;
+            // 
+            // btnAddRubric
+            // 
+            this.btnAddRubric.HeaderText = "AddRubric";
+            this.btnAddRubric.Name = "btnAddRubric";
+            this.btnAddRubric.Text = "AddRubric";
+            this.btnAddRubric.UseColumnTextForButtonValue = true;
+            // 
             // AddNewCLOsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CLOsDataGridView);
+            this.Controls.Add(this.btnAddNewCLO);
             this.Controls.Add(this.btnAddedCLOs);
             this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.btnAddCLOs);
@@ -116,6 +168,8 @@
             this.Controls.Add(this.lblCLOName);
             this.Name = "AddNewCLOsForm";
             this.Text = "AddNewCLOs";
+            this.Load += new System.EventHandler(this.AddNewCLOsForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +184,10 @@
         private System.Windows.Forms.Button btnAddCLOs;
         private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.Button btnAddedCLOs;
+        private System.Windows.Forms.Button btnAddNewCLO;
+        private System.Windows.Forms.DataGridView CLOsDataGridView;
+        private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
+        private System.Windows.Forms.DataGridViewButtonColumn btnAddRubric;
     }
 }

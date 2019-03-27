@@ -46,7 +46,6 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\P
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddRubricForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddRubricLevelForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.FormAddStudent.resources
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ClassAttendanceForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentComponentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditCLOsForm.resources
@@ -54,10 +53,8 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\P
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditRubricLevelForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedAssessmentComponentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedAssessmentsForm.resources
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedCLOsForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedRubricForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedRubricLevelForm.resources
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedStudentsForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditStudentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentAttendanceForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentResultForm.resources
@@ -68,3 +65,4 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\P
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csproj.CopyComplete
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.exe
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.pdb
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentAttendenceRecordForm.resources

@@ -29,7 +29,7 @@ namespace ProjectB
         {
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            int a;
+            
             string Edit_Query = "UPDATE dbo.Assessment SET Title='" + txtTitle.Text + "',DateCreated= '" + dtpDateCreated.Value + "',TotalMarks = '" + Convert.ToInt32(txtTotalMarks.Text) + "',TotalWeightage = '" + Convert.ToInt32(txtTotalWeightage) + "' WHERE Id = '" + Id + "'";
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();

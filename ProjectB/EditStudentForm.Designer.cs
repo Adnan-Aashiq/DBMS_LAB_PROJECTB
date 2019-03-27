@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtContact = new System.Windows.Forms.TextBox();
@@ -42,18 +41,8 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.cmbboxStatus = new System.Windows.Forms.ComboBox();
-            this.btnBackToStudentMenu = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnBackToMainPage
-            // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 0);
-            this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(157, 23);
-            this.btnBackToMainPage.TabIndex = 28;
-            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
-            this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
             // 
             // txtRegistrationNumber
             // 
@@ -165,15 +154,15 @@
             this.cmbboxStatus.Size = new System.Drawing.Size(121, 21);
             this.cmbboxStatus.TabIndex = 29;
             // 
-            // btnBackToStudentMenu
+            // btnclose
             // 
-            this.btnBackToStudentMenu.Location = new System.Drawing.Point(162, 0);
-            this.btnBackToStudentMenu.Name = "btnBackToStudentMenu";
-            this.btnBackToStudentMenu.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToStudentMenu.TabIndex = 30;
-            this.btnBackToStudentMenu.Text = "<<BACK<<";
-            this.btnBackToStudentMenu.UseVisualStyleBackColor = true;
-            this.btnBackToStudentMenu.Click += new System.EventHandler(this.btnBackToStudentMenu_Click);
+            this.btnclose.Location = new System.Drawing.Point(3, 1);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(87, 23);
+            this.btnclose.TabIndex = 30;
+            this.btnclose.Text = "<<CLOSE<<";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnBackToStudentMenu_Click);
             // 
             // EditStudentForm
             // 
@@ -181,9 +170,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBackToStudentMenu);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.cmbboxStatus);
-            this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.txtRegistrationNumber);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtContact);
@@ -205,8 +193,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.TextBox txtRegistrationNumber;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtContact;
@@ -220,6 +206,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.ComboBox cmbboxStatus;
-        private System.Windows.Forms.Button btnBackToStudentMenu;
+        private System.Windows.Forms.Button btnclose;
     }
 }

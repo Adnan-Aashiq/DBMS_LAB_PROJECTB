@@ -68,7 +68,7 @@ namespace ProjectB
 
         private void btnUpdateRubricLevel_Click(object sender, EventArgs e)
         {
-
+         
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
             string Edit_Query = "UPDATE dbo.RubricLevel SET RubricId ='"+Convert.ToInt32(cmbboxListfAddedRubricIds.Items)+"' ,Details= '" + txtDetails.Text + "', MeasurementLevel = '" + Convert.ToInt32(txtMeasurementLevel.Text) + "' ";

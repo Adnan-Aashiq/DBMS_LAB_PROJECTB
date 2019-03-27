@@ -21,9 +21,9 @@ namespace ProjectB
         }
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
-            ListOfAddedCLOsForm w = new ListOfAddedCLOsForm();
+            
             this.Hide();
-            w.Show();
+            
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private int id;
@@ -44,6 +44,7 @@ namespace ProjectB
                 MessageBox.Show("Rubric Detail is not Added");
 
             }
+            this.Hide();
         }
 
         private void AddRubricForm_Load(object sender, EventArgs e)

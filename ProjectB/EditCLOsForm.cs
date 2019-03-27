@@ -46,14 +46,13 @@ namespace ProjectB
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
+            this.Hide();
         }
         
         private void btnBackToMainPage_Click_1(object sender, EventArgs e)
         {
 
-            ListOfAddedCLOsForm v = new ListOfAddedCLOsForm();
-            this.Hide();
-            v.Show();
+            
         }
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
@@ -67,9 +66,9 @@ namespace ProjectB
 
         private void btnBackTolListOfAddedClos_Click(object sender, EventArgs e)
         {
-            ListOfAddedCLOsForm l = new ListOfAddedCLOsForm();
+            
             this.Hide();
-            l.Show();
+            
         }
     }
 }

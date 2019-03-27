@@ -30,7 +30,7 @@ namespace ProjectB
                 c.Open();
                 if (c.State == ConnectionState.Open)
                 {
-                    string Query = "insert into RubricLevel(RubricId,Details,MeasurementLevel) values('"+Id+"','" + txtDetails.Text + "','" + Convert.ToInt32(txtMeasurementLevel.Text) + "')";
+                    string Query = "insert into RubricLevel(RubricId,Details,MeasurementLevel) values('"+Id+"','" + combboxRubricLevelDetails.Text + "','" + Convert.ToInt32(txtMeasurementLevel.Text) + "')";
                     SqlCommand cmd = new SqlCommand(Query, c);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Rubric Level Detail is Added");

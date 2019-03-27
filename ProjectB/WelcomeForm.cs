@@ -25,17 +25,12 @@ namespace ProjectB
 
         private void btnRegisteredStudents_Click(object sender, EventArgs e)
         {
-
-            ListOfAddedStudentsForm registeredStudents = new ListOfAddedStudentsForm();
-            this.Hide();
-            registeredStudents.Show();
+            
         }
 
         private void btnAddedCLOs_Click(object sender, EventArgs e)
         {
-            ListOfAddedCLOsForm registeredStudents = new ListOfAddedCLOsForm();
-            this.Hide();
-            registeredStudents.Show();
+            
         }
 
         private void WelcomeForm_Load(object sender, EventArgs e)

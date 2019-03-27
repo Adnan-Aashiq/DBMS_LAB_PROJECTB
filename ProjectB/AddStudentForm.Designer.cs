@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.btnAddStudent = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblContact = new System.Windows.Forms.Label();
@@ -40,9 +40,14 @@
             this.txtContact = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtRegistrationNumber = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.btnViewRegisteredStudents = new System.Windows.Forms.Button();
+            this.StudentDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnInActive = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAddStudent = new MetroFramework.Controls.MetroButton();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -54,16 +59,16 @@
             this.lblFirstName.TabIndex = 0;
             this.lblFirstName.Text = "First Name";
             // 
-            // btnAddStudent
+            // btnRegister
             // 
-            this.btnAddStudent.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAddStudent.Location = new System.Drawing.Point(350, 353);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(75, 23);
-            this.btnAddStudent.TabIndex = 1;
-            this.btnAddStudent.Text = "Add Student";
-            this.btnAddStudent.UseVisualStyleBackColor = false;
-            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
+            this.btnRegister.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnRegister.Location = new System.Drawing.Point(350, 353);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.TabIndex = 1;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // txtFirstName
             // 
@@ -145,14 +150,14 @@
             this.txtRegistrationNumber.Size = new System.Drawing.Size(100, 20);
             this.txtRegistrationNumber.TabIndex = 12;
             // 
-            // textBox1
+            // txtStatus
             // 
-            this.textBox1.Location = new System.Drawing.Point(340, 286);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "Active";
+            this.txtStatus.Location = new System.Drawing.Point(340, 286);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
+            this.txtStatus.Size = new System.Drawing.Size(100, 20);
+            this.txtStatus.TabIndex = 13;
+            this.txtStatus.Text = "Active";
             // 
             // btnBackToMainPage
             // 
@@ -168,7 +173,7 @@
             // btnViewRegisteredStudents
             // 
             this.btnViewRegisteredStudents.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnViewRegisteredStudents.Location = new System.Drawing.Point(542, 0);
+            this.btnViewRegisteredStudents.Location = new System.Drawing.Point(393, 0);
             this.btnViewRegisteredStudents.Name = "btnViewRegisteredStudents";
             this.btnViewRegisteredStudents.Size = new System.Drawing.Size(151, 23);
             this.btnViewRegisteredStudents.TabIndex = 15;
@@ -176,15 +181,53 @@
             this.btnViewRegisteredStudents.UseVisualStyleBackColor = false;
             this.btnViewRegisteredStudents.Click += new System.EventHandler(this.btnRegisteredStudents_Click);
             // 
+            // StudentDataGridView
+            // 
+            this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnInActive,
+            this.btnEdit});
+            this.StudentDataGridView.Location = new System.Drawing.Point(49, 65);
+            this.StudentDataGridView.Name = "StudentDataGridView";
+            this.StudentDataGridView.Size = new System.Drawing.Size(616, 282);
+            this.StudentDataGridView.TabIndex = 16;
+            this.StudentDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellContentClick);
+            // 
+            // btnInActive
+            // 
+            this.btnInActive.HeaderText = "InActive";
+            this.btnInActive.Name = "btnInActive";
+            this.btnInActive.Text = "InActive";
+            this.btnInActive.UseColumnTextForButtonValue = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.HeaderText = "Edit";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseColumnTextForButtonValue = true;
+            // 
+            // btnAddStudent
+            // 
+            this.btnAddStudent.Location = new System.Drawing.Point(265, 0);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(122, 23);
+            this.btnAddStudent.TabIndex = 17;
+            this.btnAddStudent.Text = "Add Student";
+            this.btnAddStudent.UseSelectable = true;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click_1);
+            // 
             // FormAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(692, 450);
+            this.Controls.Add(this.btnAddStudent);
+            this.Controls.Add(this.StudentDataGridView);
             this.Controls.Add(this.btnViewRegisteredStudents);
             this.Controls.Add(this.btnBackToMainPage);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.txtRegistrationNumber);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtContact);
@@ -195,10 +238,12 @@
             this.Controls.Add(this.lblContact);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.btnAddStudent);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblFirstName);
             this.Name = "FormAddStudent";
             this.Text = "AddStudentForm";
+            this.Load += new System.EventHandler(this.FormAddStudent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,7 +252,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.Button btnAddStudent;
+        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblContact;
@@ -218,8 +263,12 @@
         private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtRegistrationNumber;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.Button btnViewRegisteredStudents;
+        private System.Windows.Forms.DataGridView StudentDataGridView;
+        private System.Windows.Forms.DataGridViewButtonColumn btnInActive;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
+        private MetroFramework.Controls.MetroButton btnAddStudent;
     }
 }
