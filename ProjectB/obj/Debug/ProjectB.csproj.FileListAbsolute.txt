@@ -66,3 +66,5 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\P
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.exe
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.pdb
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentAttendenceRecordForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\PagedList.dll
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\PagedList.xml
