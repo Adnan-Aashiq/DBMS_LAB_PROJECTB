@@ -86,5 +86,12 @@ namespace ProjectB
             this.Hide();
             d.Show();
         }
+
+        private void btnStudentResultMenu_Click(object sender, EventArgs e)
+        {
+            StudentResultForm t = new StudentResultForm();
+            t.Show();
+            this.Hide();
+        }
     }
 }

@@ -65,5 +65,10 @@ namespace ProjectB
             o.Show();
             
         }
+
+        private void LookupMenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

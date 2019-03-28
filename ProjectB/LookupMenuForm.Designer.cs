@@ -111,6 +111,7 @@
             this.Controls.Add(this.lblSelectName);
             this.Name = "LookupMenuForm";
             this.Text = "AddLookupForm";
+            this.Load += new System.EventHandler(this.LookupMenuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
