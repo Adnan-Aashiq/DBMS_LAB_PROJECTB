@@ -40,14 +40,14 @@ namespace ProjectB
 
         private void btnAddNewCLO_Click(object sender, EventArgs e)
         {
-            AddNewCLOsForm clo = new AddNewCLOsForm();
+            CLOsMenuForm clo = new CLOsMenuForm();
             this.Hide();
             clo.Show();
         }
 
         private void btnAddAssessmentMenu_Click(object sender, EventArgs e)
         {
-            AddAssessmentForm a = new AddAssessmentForm();
+            AssessmentMenuForm a = new AssessmentMenuForm();
             this.Hide();
             a.Show();
         }
@@ -83,7 +83,7 @@ namespace ProjectB
 
         private void btnCLOMenu_Click(object sender, EventArgs e)
         {
-            AddNewCLOsForm d = new AddNewCLOsForm();
+            CLOsMenuForm d = new CLOsMenuForm();
             this.Hide();
             d.Show();
         }

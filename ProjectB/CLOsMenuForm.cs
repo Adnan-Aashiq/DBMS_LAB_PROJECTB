@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace ProjectB
 {
-    public partial class AddNewCLOsForm : Form
+    public partial class CLOsMenuForm : Form
     {
-        public AddNewCLOsForm()
+        public CLOsMenuForm()
         {
             InitializeComponent();
         }

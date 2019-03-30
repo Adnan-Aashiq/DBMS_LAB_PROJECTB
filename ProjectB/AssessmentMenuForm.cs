@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace ProjectB
 {
-    public partial class AddAssessmentForm : Form
+    public partial class AssessmentMenuForm : Form
     {
-        public AddAssessmentForm()
+        public AssessmentMenuForm()
         {
             InitializeComponent();
         }

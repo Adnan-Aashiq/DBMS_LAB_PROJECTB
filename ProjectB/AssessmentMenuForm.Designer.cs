@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class AddAssessmentForm
+    partial class AssessmentMenuForm
     {
         /// <summary>
         /// Required designer variable.

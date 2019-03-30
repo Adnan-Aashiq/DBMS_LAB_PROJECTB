@@ -1,6 +1,6 @@
 ﻿namespace ProjectB
 {
-    partial class AddNewCLOsForm
+    partial class CLOsMenuForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,14 +39,13 @@
             this.CLOsDataGridView = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnAddRubric = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCLOName
             // 
             this.lblCLOName.AutoSize = true;
-            this.lblCLOName.Location = new System.Drawing.Point(270, 126);
+            this.lblCLOName.Location = new System.Drawing.Point(8, 51);
             this.lblCLOName.Name = "lblCLOName";
             this.lblCLOName.Size = new System.Drawing.Size(59, 13);
             this.lblCLOName.TabIndex = 0;
@@ -54,7 +53,7 @@
             // 
             // txtCLOName
             // 
-            this.txtCLOName.Location = new System.Drawing.Point(380, 119);
+            this.txtCLOName.Location = new System.Drawing.Point(118, 44);
             this.txtCLOName.Name = "txtCLOName";
             this.txtCLOName.Size = new System.Drawing.Size(100, 20);
             this.txtCLOName.TabIndex = 1;
@@ -62,7 +61,7 @@
             // lblCreatedDate
             // 
             this.lblCreatedDate.AutoSize = true;
-            this.lblCreatedDate.Location = new System.Drawing.Point(270, 179);
+            this.lblCreatedDate.Location = new System.Drawing.Point(8, 104);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(70, 13);
             this.lblCreatedDate.TabIndex = 2;
@@ -70,7 +69,7 @@
             // 
             // dtpCreatedDate
             // 
-            this.dtpCreatedDate.Location = new System.Drawing.Point(371, 179);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(109, 104);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
             this.dtpCreatedDate.Size = new System.Drawing.Size(200, 20);
             this.dtpCreatedDate.TabIndex = 3;
@@ -78,7 +77,7 @@
             // 
             // btnAddCLOs
             // 
-            this.btnAddCLOs.Location = new System.Drawing.Point(405, 254);
+            this.btnAddCLOs.Location = new System.Drawing.Point(143, 179);
             this.btnAddCLOs.Name = "btnAddCLOs";
             this.btnAddCLOs.Size = new System.Drawing.Size(75, 23);
             this.btnAddCLOs.TabIndex = 4;
@@ -122,9 +121,8 @@
             this.CLOsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CLOsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
-            this.btnEdit,
-            this.btnAddRubric});
-            this.CLOsDataGridView.Location = new System.Drawing.Point(139, 93);
+            this.btnEdit});
+            this.CLOsDataGridView.Location = new System.Drawing.Point(224, 143);
             this.CLOsDataGridView.Name = "CLOsDataGridView";
             this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
             this.CLOsDataGridView.TabIndex = 8;
@@ -143,13 +141,6 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseColumnTextForButtonValue = true;
-            // 
-            // btnAddRubric
-            // 
-            this.btnAddRubric.HeaderText = "AddRubric";
-            this.btnAddRubric.Name = "btnAddRubric";
-            this.btnAddRubric.Text = "AddRubric";
-            this.btnAddRubric.UseColumnTextForButtonValue = true;
             // 
             // AddNewCLOsForm
             // 
@@ -188,6 +179,5 @@
         private System.Windows.Forms.DataGridView CLOsDataGridView;
         private System.Windows.Forms.DataGridViewButtonColumn btnDelete;
         private System.Windows.Forms.DataGridViewButtonColumn btnEdit;
-        private System.Windows.Forms.DataGridViewButtonColumn btnAddRubric;
     }
 }

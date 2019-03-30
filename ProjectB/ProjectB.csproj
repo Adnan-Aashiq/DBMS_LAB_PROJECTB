@@ -58,17 +58,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAssessmentForm.cs">
+    <Compile Include="AssessmentMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddAssessmentForm.Designer.cs">
-      <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    <Compile Include="AssessmentMenuForm.Designer.cs">
+      <DependentUpon>AssessmentMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListOfAddedRubricForm.cs">
+    <Compile Include="RubricMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListOfAddedRubricForm.Designer.cs">
-      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
+    <Compile Include="RubricMenuForm.Designer.cs">
+      <DependentUpon>RubricMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LookupFilterForm.cs">
       <SubType>Form</SubType>
@@ -82,23 +82,17 @@
     <Compile Include="LookupMenuForm.Designer.cs">
       <DependentUpon>LookupMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewCLOsForm.cs">
+    <Compile Include="CLOsMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewCLOsForm.Designer.cs">
-      <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
+    <Compile Include="CLOsMenuForm.Designer.cs">
+      <DependentUpon>CLOsMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddRubricLevelForm.cs">
+    <Compile Include="StudentMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddRubricLevelForm.Designer.cs">
-      <DependentUpon>AddRubricLevelForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddStudentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddStudentForm.Designer.cs">
-      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    <Compile Include="StudentMenuForm.Designer.cs">
+      <DependentUpon>StudentMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditAssessmentComponentForm.cs">
       <SubType>Form</SubType>
@@ -142,12 +136,6 @@
     <Compile Include="StudentAttendanceForm.Designer.cs">
       <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentAttendenceRecordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentAttendenceRecordForm.Designer.cs">
-      <DependentUpon>StudentAttendenceRecordForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentResultForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,11 +150,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddAssessmentForm.resx">
-      <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    <EmbeddedResource Include="AssessmentMenuForm.resx">
+      <DependentUpon>AssessmentMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedRubricForm.resx">
-      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
+    <EmbeddedResource Include="RubricMenuForm.resx">
+      <DependentUpon>RubricMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LookupFilterForm.resx">
       <DependentUpon>LookupFilterForm.cs</DependentUpon>
@@ -174,14 +162,11 @@
     <EmbeddedResource Include="LookupMenuForm.resx">
       <DependentUpon>LookupMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewCLOsForm.resx">
-      <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
+    <EmbeddedResource Include="CLOsMenuForm.resx">
+      <DependentUpon>CLOsMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddRubricLevelForm.resx">
-      <DependentUpon>AddRubricLevelForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddStudentForm.resx">
-      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    <EmbeddedResource Include="StudentMenuForm.resx">
+      <DependentUpon>StudentMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAssessmentComponentForm.resx">
       <DependentUpon>EditAssessmentComponentForm.cs</DependentUpon>
@@ -203,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentAttendanceForm.resx">
       <DependentUpon>StudentAttendanceForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentAttendenceRecordForm.resx">
-      <DependentUpon>StudentAttendenceRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentResultForm.resx">
       <DependentUpon>StudentResultForm.cs</DependentUpon>

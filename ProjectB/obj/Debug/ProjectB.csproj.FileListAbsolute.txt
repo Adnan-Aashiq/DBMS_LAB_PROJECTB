@@ -38,11 +38,8 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\M
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.dll
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.Fonts.dll
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csprojAssemblyReference.cache
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddAssessmentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupFilterForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupMenuForm.resources
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddNewCLOsForm.resources
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AddRubricLevelForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.FormAddStudent.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentComponentForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentForm.resources
@@ -59,7 +56,8 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\P
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csproj.CopyComplete
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.exe
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.pdb
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.StudentAttendenceRecordForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\PagedList.dll
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\PagedList.xml
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.ListOfAddedRubricForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.AssessmentMenuForm.resources
+D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.CLOsMenuForm.resources
