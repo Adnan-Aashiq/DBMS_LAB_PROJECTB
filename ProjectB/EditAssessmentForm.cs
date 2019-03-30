@@ -63,9 +63,10 @@ namespace ProjectB
 
         private void btnBackTolListOfAddedAssessment_Click(object sender, EventArgs e)
         {
-            ListOfAddedAssessmentsForm r = new ListOfAddedAssessmentsForm();
-            this.Hide();
-            r.Show();
+            this.Close();
+            //ListOfAddedAssessmentsForm r = new ListOfAddedAssessmentsForm();
+            //this.Hide();
+            //r.Show();
         }
     }
 }

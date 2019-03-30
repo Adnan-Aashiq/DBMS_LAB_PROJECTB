@@ -37,18 +37,22 @@ namespace ProjectB
             {
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(ListOfAddedAssessmentsDataGridView.Rows[row].Cells["Id"].Value);
-                EditAssessmentForm r = new EditAssessmentForm(id);
-                this.Hide();
-                r.Show();
+
+                var formPopup = new EditAssessmentForm(id);
+                formPopup.Show(this);
+
+                //EditAssessmentForm r = new EditAssessmentForm(id);
+                //this.Hide();
+                //r.Show();
             }
-            if (e.ColumnIndex == ListOfAddedAssessmentsDataGridView.Columns["btnAddAssessmentComponent"].Index)
-            {
-                int row = e.RowIndex;
-                int id = Convert.ToInt32(ListOfAddedAssessmentsDataGridView.Rows[row].Cells["Id"].Value);
-                AddAssessmentComponentForm r = new AddAssessmentComponentForm(id);
-                this.Hide();
-                r.Show();
-            }
+            //if (e.ColumnIndex == ListOfAddedAssessmentsDataGridView.Columns["btnAddAssessmentComponent"].Index)
+            //{
+            //    int row = e.RowIndex;
+            //    int id = Convert.ToInt32(ListOfAddedAssessmentsDataGridView.Rows[row].Cells["Id"].Value);
+            //    AddAssessmentComponentForm r = new AddAssessmentComponentForm(id);
+            //    this.Hide();
+            //    r.Show();
+            //}
         }
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
@@ -82,6 +86,13 @@ namespace ProjectB
             ListOfAddedAssessmentComponentForm n = new ListOfAddedAssessmentComponentForm();
             this.Hide();
             n.Show();
+        }
+
+        private void btnbtnBackToMainPage_Click(object sender, EventArgs e)
+        {
+            WelcomeForm t = new WelcomeForm();
+            this.Hide();
+            t.Show();
         }
     }
 }

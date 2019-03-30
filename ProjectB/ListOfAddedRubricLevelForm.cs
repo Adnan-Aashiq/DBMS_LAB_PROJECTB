@@ -72,7 +72,7 @@ namespace ProjectB
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(ListOfAddedRubricLeveldataGridView.Rows[row].Cells["Id"].Value);
                 int cloid = Convert.ToInt32(ListOfAddedRubricLeveldataGridView.Rows[row].Cells["RubricId"].Value);
-                EditRubricLevelForm r = new EditRubricLevelForm(id,cloid);
+                EditRubricLevelForm r = new EditRubricLevelForm(id);
                 this.Hide();
                 r.Show();
             }

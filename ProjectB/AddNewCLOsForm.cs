@@ -124,8 +124,8 @@ namespace ProjectB
                 int id = Convert.ToInt32(CLOsDataGridView.Rows[row].Cells["Id"].Value);
 
                 
-                var formPopup = new AddRubricForm(id);
-                formPopup.Show(this);
+                //var formPopup = new AddRubricForm(id);
+                //formPopup.Show(this);
             }
         }
     }

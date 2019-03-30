@@ -31,10 +31,9 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtRubricDetails = new System.Windows.Forms.TextBox();
             this.lblRubricDetails = new System.Windows.Forms.Label();
-            this.btnBackToMainPage = new System.Windows.Forms.Button();
-            this.btnBackTolListOfAddedRubric = new System.Windows.Forms.Button();
-            this.cmbboxListfAddedCLOIds = new System.Windows.Forms.ComboBox();
-            this.lblCLOIds = new System.Windows.Forms.Label();
+            this.btnCLOSE = new System.Windows.Forms.Button();
+            this.combboxCLODetails = new System.Windows.Forms.ComboBox();
+            this.lblCLONames = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -63,42 +62,32 @@
             this.lblRubricDetails.TabIndex = 38;
             this.lblRubricDetails.Text = "Rubric Details";
             // 
-            // btnBackToMainPage
+            // btnCLOSE
             // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 3);
-            this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(148, 23);
-            this.btnBackToMainPage.TabIndex = 42;
-            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
-            this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click_1);
+            this.btnCLOSE.Location = new System.Drawing.Point(2, 2);
+            this.btnCLOSE.Name = "btnCLOSE";
+            this.btnCLOSE.Size = new System.Drawing.Size(75, 23);
+            this.btnCLOSE.TabIndex = 41;
+            this.btnCLOSE.Text = "<<CLOSE<<";
+            this.btnCLOSE.UseVisualStyleBackColor = true;
+            this.btnCLOSE.Click += new System.EventHandler(this.btnBackTolListOfAddedRubric_Click);
             // 
-            // btnBackTolListOfAddedRubric
+            // combboxCLODetails
             // 
-            this.btnBackTolListOfAddedRubric.Location = new System.Drawing.Point(150, 3);
-            this.btnBackTolListOfAddedRubric.Name = "btnBackTolListOfAddedRubric";
-            this.btnBackTolListOfAddedRubric.Size = new System.Drawing.Size(75, 23);
-            this.btnBackTolListOfAddedRubric.TabIndex = 41;
-            this.btnBackTolListOfAddedRubric.Text = "<<BACK<<";
-            this.btnBackTolListOfAddedRubric.UseVisualStyleBackColor = true;
-            this.btnBackTolListOfAddedRubric.Click += new System.EventHandler(this.btnBackTolListOfAddedRubric_Click);
+            this.combboxCLODetails.FormattingEnabled = true;
+            this.combboxCLODetails.Location = new System.Drawing.Point(434, 52);
+            this.combboxCLODetails.Name = "combboxCLODetails";
+            this.combboxCLODetails.Size = new System.Drawing.Size(121, 21);
+            this.combboxCLODetails.TabIndex = 45;
             // 
-            // cmbboxListfAddedCLOIds
+            // lblCLONames
             // 
-            this.cmbboxListfAddedCLOIds.FormattingEnabled = true;
-            this.cmbboxListfAddedCLOIds.Location = new System.Drawing.Point(434, 68);
-            this.cmbboxListfAddedCLOIds.Name = "cmbboxListfAddedCLOIds";
-            this.cmbboxListfAddedCLOIds.Size = new System.Drawing.Size(121, 21);
-            this.cmbboxListfAddedCLOIds.TabIndex = 43;
-            // 
-            // lblCLOIds
-            // 
-            this.lblCLOIds.AutoSize = true;
-            this.lblCLOIds.Location = new System.Drawing.Point(294, 68);
-            this.lblCLOIds.Name = "lblCLOIds";
-            this.lblCLOIds.Size = new System.Drawing.Size(76, 13);
-            this.lblCLOIds.TabIndex = 44;
-            this.lblCLOIds.Text = "List of CLO Ids";
+            this.lblCLONames.AutoSize = true;
+            this.lblCLONames.Location = new System.Drawing.Point(294, 60);
+            this.lblCLONames.Name = "lblCLONames";
+            this.lblCLONames.Size = new System.Drawing.Size(64, 13);
+            this.lblCLONames.TabIndex = 44;
+            this.lblCLONames.Text = "CLO Names";
             // 
             // EditRubricForm
             // 
@@ -106,10 +95,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblCLOIds);
-            this.Controls.Add(this.cmbboxListfAddedCLOIds);
-            this.Controls.Add(this.btnBackToMainPage);
-            this.Controls.Add(this.btnBackTolListOfAddedRubric);
+            this.Controls.Add(this.combboxCLODetails);
+            this.Controls.Add(this.lblCLONames);
+            this.Controls.Add(this.btnCLOSE);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtRubricDetails);
             this.Controls.Add(this.lblRubricDetails);
@@ -125,9 +113,8 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtRubricDetails;
         private System.Windows.Forms.Label lblRubricDetails;
-        private System.Windows.Forms.Button btnBackToMainPage;
-        private System.Windows.Forms.Button btnBackTolListOfAddedRubric;
-        private System.Windows.Forms.ComboBox cmbboxListfAddedCLOIds;
-        private System.Windows.Forms.Label lblCLOIds;
+        private System.Windows.Forms.Button btnCLOSE;
+        private System.Windows.Forms.ComboBox combboxCLODetails;
+        private System.Windows.Forms.Label lblCLONames;
     }
 }

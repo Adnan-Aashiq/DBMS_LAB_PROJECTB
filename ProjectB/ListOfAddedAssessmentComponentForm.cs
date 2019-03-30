@@ -26,7 +26,7 @@ namespace ProjectB
                 int id = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["Id"].Value);
                 int rubricid = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["RubricId"].Value);
                 int assessmentid = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["AssessmentId"].Value);
-                EditAssessmentComponentForm r = new EditAssessmentComponentForm(id, rubricid, assessmentid);
+                EditAssessmentComponentForm r = new EditAssessmentComponentForm(id);
                 this.Hide();
                 r.Show();
             }

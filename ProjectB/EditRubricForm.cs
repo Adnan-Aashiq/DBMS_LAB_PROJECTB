@@ -14,11 +14,11 @@ namespace ProjectB
     public partial class EditRubricForm : Form
     {
         public int Id;
-        public int a;
-        public EditRubricForm(int id,int CLOId)
+        
+        public EditRubricForm(int id)
         {
             Id = id;
-            a = CLOId;
+            
             InitializeComponent();
         }
         public EditRubricForm()
@@ -28,16 +28,13 @@ namespace ProjectB
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
-            ListOfAddedRubricForm r = new ListOfAddedRubricForm();
-            this.Hide();
-            r.Show();
         }
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void btnUpdate_Click(object sender, EventArgs e)
         { 
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" + cmbboxListfAddedCLOIds.SelectedItem + "'  WHERE Id = '" + Id + "'";
+            string Edit_Query = "UPDATE dbo.Rubric SET Details='" + txtRubricDetails.Text + "', CloId = '" +Convert.ToInt32(combboxCLODetails.SelectedValue)  + "'  WHERE Id = '" + Id + "'";
             SqlCommand cmd = new SqlCommand(Edit_Query, Connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
@@ -46,22 +43,20 @@ namespace ProjectB
         private void EditRubricForm_Load(object sender, EventArgs e)
         {
 
-            SqlConnection c = new SqlConnection(constr);
-            c.Open();
-            if (c.State == ConnectionState.Open)
+
+            SqlConnection Connection = new SqlConnection(constr);
+            Connection.Open();
+            if (Connection.State == ConnectionState.Open)
             {
-                string query = "select * from dbo.Clo";
-                SqlCommand t = new SqlCommand(query, c);
-
-                SqlDataReader Details = t.ExecuteReader();
-                while (Details.Read())
-                {
-                    cmbboxListfAddedCLOIds.Items.Add(Details[0].ToString());
-                }
-
-
+                string query = "select Id,Name from dbo.Clo";
+                SqlDataAdapter t = new SqlDataAdapter(query, Connection);
+                DataTable dtatbl = new DataTable();
+                t.Fill(dtatbl);
+                combboxCLODetails.DataSource = dtatbl;
+                combboxCLODetails.DisplayMember = "Name";
+                combboxCLODetails.ValueMember = "id";
             }
-            c.Close();
+            Connection.Close();
             SqlConnection x = new SqlConnection(constr);
             x.Open();
             string Get_Query = "select * FROM dbo.Rubric  WHERE Id = '" + Id + "'";
@@ -83,9 +78,7 @@ namespace ProjectB
 
         private void btnBackTolListOfAddedRubric_Click(object sender, EventArgs e)
         {
-            ListOfAddedRubricForm p = new ListOfAddedRubricForm();
-            this.Hide();
-            p.Show();
+            this.Close();
 
         }
     }

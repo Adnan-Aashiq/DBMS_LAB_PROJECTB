@@ -49,9 +49,7 @@ namespace ProjectB
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ListOfAddedRubricForm f = new ListOfAddedRubricForm();
-            this.Hide();
-            f.Show();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)

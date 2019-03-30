@@ -58,17 +58,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAssessmentComponentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddAssessmentComponentForm.Designer.cs">
-      <DependentUpon>AddAssessmentComponentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddAssessmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddAssessmentForm.Designer.cs">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfAddedRubricForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfAddedRubricForm.Designer.cs">
+      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LookupFilterForm.cs">
       <SubType>Form</SubType>
@@ -87,12 +87,6 @@
     </Compile>
     <Compile Include="AddNewCLOsForm.Designer.cs">
       <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddRubricForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddRubricForm.Designer.cs">
-      <DependentUpon>AddRubricForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AddRubricLevelForm.cs">
       <SubType>Form</SubType>
@@ -136,30 +130,6 @@
     <Compile Include="EditRubricLevelForm.Designer.cs">
       <DependentUpon>EditRubricLevelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListOfAddedAssessmentComponentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListOfAddedAssessmentComponentForm.Designer.cs">
-      <DependentUpon>ListOfAddedAssessmentComponentForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListOfAddedAssessmentsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListOfAddedAssessmentsForm.Designer.cs">
-      <DependentUpon>ListOfAddedAssessmentsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListOfAddedRubricForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListOfAddedRubricForm.Designer.cs">
-      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListOfAddedRubricLevelForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListOfAddedRubricLevelForm.Designer.cs">
-      <DependentUpon>ListOfAddedRubricLevelForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,11 +162,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddAssessmentComponentForm.resx">
-      <DependentUpon>AddAssessmentComponentForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddAssessmentForm.resx">
       <DependentUpon>AddAssessmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfAddedRubricForm.resx">
+      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LookupFilterForm.resx">
       <DependentUpon>LookupFilterForm.cs</DependentUpon>
@@ -206,9 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewCLOsForm.resx">
       <DependentUpon>AddNewCLOsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddRubricForm.resx">
-      <DependentUpon>AddRubricForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddRubricLevelForm.resx">
       <DependentUpon>AddRubricLevelForm.cs</DependentUpon>
@@ -230,18 +197,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditRubricLevelForm.resx">
       <DependentUpon>EditRubricLevelForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedAssessmentComponentForm.resx">
-      <DependentUpon>ListOfAddedAssessmentComponentForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedAssessmentsForm.resx">
-      <DependentUpon>ListOfAddedAssessmentsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedRubricForm.resx">
-      <DependentUpon>ListOfAddedRubricForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListOfAddedRubricLevelForm.resx">
-      <DependentUpon>ListOfAddedRubricLevelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditStudentForm.resx">
       <DependentUpon>EditStudentForm.cs</DependentUpon>

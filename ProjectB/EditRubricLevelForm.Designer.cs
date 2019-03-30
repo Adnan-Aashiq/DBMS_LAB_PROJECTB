@@ -28,36 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBackToMainPage = new System.Windows.Forms.Button();
-            this.btnBackToAddedRubrics = new System.Windows.Forms.Button();
+            this.btnCLOSE = new System.Windows.Forms.Button();
             this.lblMeasurementLevel = new System.Windows.Forms.Label();
             this.txtMeasurementLevel = new System.Windows.Forms.TextBox();
-            this.txtDetails = new System.Windows.Forms.TextBox();
             this.btnUpdateRubricLevel = new System.Windows.Forms.Button();
-            this.lblDetails = new System.Windows.Forms.Label();
-            this.lblRubricIds = new System.Windows.Forms.Label();
-            this.cmbboxListfAddedRubricIds = new System.Windows.Forms.ComboBox();
+            this.combboxListOfRubricDetails = new MetroFramework.Controls.MetroComboBox();
+            this.lblListOfRubricDetails = new System.Windows.Forms.Label();
+            this.combboxRubricLevelDetails = new MetroFramework.Controls.MetroComboBox();
+            this.lblDtailsRL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnBackToMainPage
+            // btnCLOSE
             // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(1, 1);
-            this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(138, 23);
-            this.btnBackToMainPage.TabIndex = 13;
-            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
-            this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
-            // 
-            // btnBackToAddedRubrics
-            // 
-            this.btnBackToAddedRubrics.Location = new System.Drawing.Point(140, 1);
-            this.btnBackToAddedRubrics.Name = "btnBackToAddedRubrics";
-            this.btnBackToAddedRubrics.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToAddedRubrics.TabIndex = 12;
-            this.btnBackToAddedRubrics.Text = "<<BACK<<";
-            this.btnBackToAddedRubrics.UseVisualStyleBackColor = true;
-            this.btnBackToAddedRubrics.Click += new System.EventHandler(this.btnBackToAddedRubrics_Click);
+            this.btnCLOSE.Location = new System.Drawing.Point(1, 1);
+            this.btnCLOSE.Name = "btnCLOSE";
+            this.btnCLOSE.Size = new System.Drawing.Size(75, 23);
+            this.btnCLOSE.TabIndex = 12;
+            this.btnCLOSE.Text = "<<CLOSE<<";
+            this.btnCLOSE.UseVisualStyleBackColor = true;
+            this.btnCLOSE.Click += new System.EventHandler(this.btnBackToAddedRubrics_Click);
             // 
             // lblMeasurementLevel
             // 
@@ -75,13 +64,6 @@
             this.txtMeasurementLevel.Size = new System.Drawing.Size(100, 20);
             this.txtMeasurementLevel.TabIndex = 10;
             // 
-            // txtDetails
-            // 
-            this.txtDetails.Location = new System.Drawing.Point(458, 139);
-            this.txtDetails.Name = "txtDetails";
-            this.txtDetails.Size = new System.Drawing.Size(100, 20);
-            this.txtDetails.TabIndex = 9;
-            // 
             // btnUpdateRubricLevel
             // 
             this.btnUpdateRubricLevel.Location = new System.Drawing.Point(458, 269);
@@ -92,31 +74,53 @@
             this.btnUpdateRubricLevel.UseVisualStyleBackColor = true;
             this.btnUpdateRubricLevel.Click += new System.EventHandler(this.btnUpdateRubricLevel_Click);
             // 
-            // lblDetails
+            // combboxListOfRubricDetails
             // 
-            this.lblDetails.AutoSize = true;
-            this.lblDetails.Location = new System.Drawing.Point(323, 146);
-            this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(39, 13);
-            this.lblDetails.TabIndex = 7;
-            this.lblDetails.Text = "Details";
+            this.combboxListOfRubricDetails.FormattingEnabled = true;
+            this.combboxListOfRubricDetails.ItemHeight = 23;
+            this.combboxListOfRubricDetails.Items.AddRange(new object[] {
+            "Bad",
+            "Satisfactory",
+            "Good",
+            "Excellent"});
+            this.combboxListOfRubricDetails.Location = new System.Drawing.Point(437, 66);
+            this.combboxListOfRubricDetails.Name = "combboxListOfRubricDetails";
+            this.combboxListOfRubricDetails.Size = new System.Drawing.Size(121, 29);
+            this.combboxListOfRubricDetails.TabIndex = 52;
+            this.combboxListOfRubricDetails.UseSelectable = true;
             // 
-            // lblRubricIds
+            // lblListOfRubricDetails
             // 
-            this.lblRubricIds.AutoSize = true;
-            this.lblRubricIds.Location = new System.Drawing.Point(297, 76);
-            this.lblRubricIds.Name = "lblRubricIds";
-            this.lblRubricIds.Size = new System.Drawing.Size(86, 13);
-            this.lblRubricIds.TabIndex = 46;
-            this.lblRubricIds.Text = "List of Rubric Ids";
+            this.lblListOfRubricDetails.AutoSize = true;
+            this.lblListOfRubricDetails.Location = new System.Drawing.Point(299, 69);
+            this.lblListOfRubricDetails.Name = "lblListOfRubricDetails";
+            this.lblListOfRubricDetails.Size = new System.Drawing.Size(106, 13);
+            this.lblListOfRubricDetails.TabIndex = 51;
+            this.lblListOfRubricDetails.Text = "List Of Rubric Details";
             // 
-            // cmbboxListfAddedRubricIds
+            // combboxRubricLevelDetails
             // 
-            this.cmbboxListfAddedRubricIds.FormattingEnabled = true;
-            this.cmbboxListfAddedRubricIds.Location = new System.Drawing.Point(437, 76);
-            this.cmbboxListfAddedRubricIds.Name = "cmbboxListfAddedRubricIds";
-            this.cmbboxListfAddedRubricIds.Size = new System.Drawing.Size(121, 21);
-            this.cmbboxListfAddedRubricIds.TabIndex = 45;
+            this.combboxRubricLevelDetails.FormattingEnabled = true;
+            this.combboxRubricLevelDetails.ItemHeight = 23;
+            this.combboxRubricLevelDetails.Items.AddRange(new object[] {
+            "Bad",
+            "Satisfactory",
+            "Good",
+            "Excellent"});
+            this.combboxRubricLevelDetails.Location = new System.Drawing.Point(437, 135);
+            this.combboxRubricLevelDetails.Name = "combboxRubricLevelDetails";
+            this.combboxRubricLevelDetails.Size = new System.Drawing.Size(121, 29);
+            this.combboxRubricLevelDetails.TabIndex = 54;
+            this.combboxRubricLevelDetails.UseSelectable = true;
+            // 
+            // lblDtailsRL
+            // 
+            this.lblDtailsRL.AutoSize = true;
+            this.lblDtailsRL.Location = new System.Drawing.Point(299, 135);
+            this.lblDtailsRL.Name = "lblDtailsRL";
+            this.lblDtailsRL.Size = new System.Drawing.Size(39, 13);
+            this.lblDtailsRL.TabIndex = 53;
+            this.lblDtailsRL.Text = "Details";
             // 
             // EditRubricLevelForm
             // 
@@ -124,15 +128,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblRubricIds);
-            this.Controls.Add(this.cmbboxListfAddedRubricIds);
-            this.Controls.Add(this.btnBackToMainPage);
-            this.Controls.Add(this.btnBackToAddedRubrics);
+            this.Controls.Add(this.combboxRubricLevelDetails);
+            this.Controls.Add(this.lblDtailsRL);
+            this.Controls.Add(this.combboxListOfRubricDetails);
+            this.Controls.Add(this.lblListOfRubricDetails);
+            this.Controls.Add(this.btnCLOSE);
             this.Controls.Add(this.lblMeasurementLevel);
             this.Controls.Add(this.txtMeasurementLevel);
-            this.Controls.Add(this.txtDetails);
             this.Controls.Add(this.btnUpdateRubricLevel);
-            this.Controls.Add(this.lblDetails);
             this.Name = "EditRubricLevelForm";
             this.Text = "EditRubricLevelForm";
             this.Load += new System.EventHandler(this.EditRubricLevelForm_Load);
@@ -142,15 +145,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBackToMainPage;
-        private System.Windows.Forms.Button btnBackToAddedRubrics;
+        private System.Windows.Forms.Button btnCLOSE;
         private System.Windows.Forms.Label lblMeasurementLevel;
         private System.Windows.Forms.TextBox txtMeasurementLevel;
-        private System.Windows.Forms.TextBox txtDetails;
         private System.Windows.Forms.Button btnUpdateRubricLevel;
-        private System.Windows.Forms.Label lblDetails;
-        private System.Windows.Forms.Label lblRubricIds;
-        private System.Windows.Forms.ComboBox cmbboxListfAddedRubricIds;
+        private MetroFramework.Controls.MetroComboBox combboxListOfRubricDetails;
+        private System.Windows.Forms.Label lblListOfRubricDetails;
+        private MetroFramework.Controls.MetroComboBox combboxRubricLevelDetails;
+        private System.Windows.Forms.Label lblDtailsRL;
     }
 }

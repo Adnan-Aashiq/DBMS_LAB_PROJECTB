@@ -59,7 +59,7 @@
             this.btnAssessmentMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAssessmentMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAssessmentMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAssessmentMenu.Location = new System.Drawing.Point(188, 1);
+            this.btnAssessmentMenu.Location = new System.Drawing.Point(199, 1);
             this.btnAssessmentMenu.Name = "btnAssessmentMenu";
             this.btnAssessmentMenu.Size = new System.Drawing.Size(125, 23);
             this.btnAssessmentMenu.TabIndex = 6;
@@ -72,7 +72,7 @@
             this.btnAttendenceMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAttendenceMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAttendenceMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttendenceMenu.Location = new System.Drawing.Point(315, 1);
+            this.btnAttendenceMenu.Location = new System.Drawing.Point(325, 1);
             this.btnAttendenceMenu.Name = "btnAttendenceMenu";
             this.btnAttendenceMenu.Size = new System.Drawing.Size(123, 23);
             this.btnAttendenceMenu.TabIndex = 17;
@@ -85,7 +85,7 @@
             this.btnListRubricMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnListRubricMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnListRubricMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListRubricMenu.Location = new System.Drawing.Point(439, 1);
+            this.btnListRubricMenu.Location = new System.Drawing.Point(449, 1);
             this.btnListRubricMenu.Name = "btnListRubricMenu";
             this.btnListRubricMenu.Size = new System.Drawing.Size(122, 23);
             this.btnListRubricMenu.TabIndex = 18;
@@ -98,7 +98,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(562, 1);
+            this.button1.Location = new System.Drawing.Point(572, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 23);
             this.button1.TabIndex = 19;
@@ -125,7 +125,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(-1, 1);
+            this.button2.Location = new System.Drawing.Point(10, 1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 23);
             this.button2.TabIndex = 21;
@@ -138,7 +138,7 @@
             this.btnCLOMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCLOMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCLOMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCLOMenu.Location = new System.Drawing.Point(106, 1);
+            this.btnCLOMenu.Location = new System.Drawing.Point(117, 1);
             this.btnCLOMenu.Name = "btnCLOMenu";
             this.btnCLOMenu.Size = new System.Drawing.Size(81, 23);
             this.btnCLOMenu.TabIndex = 22;
@@ -151,7 +151,7 @@
             this.btnStudentResultMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStudentResultMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStudentResultMenu.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentResultMenu.Location = new System.Drawing.Point(691, 1);
+            this.btnStudentResultMenu.Location = new System.Drawing.Point(701, 1);
             this.btnStudentResultMenu.Name = "btnStudentResultMenu";
             this.btnStudentResultMenu.Size = new System.Drawing.Size(155, 23);
             this.btnStudentResultMenu.TabIndex = 23;

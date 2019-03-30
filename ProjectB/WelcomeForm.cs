@@ -54,9 +54,10 @@ namespace ProjectB
 
         private void btnRubricMenu_Click(object sender, EventArgs e)
         {
-            ListOfAddedRubricForm r = new ListOfAddedRubricForm();
+            ListOfAddedRubricForm f = new ListOfAddedRubricForm();
             this.Hide();
-            r.Show();
+            f.Show();
+
         }
 
         private void btnAttendenceMenu_Click(object sender, EventArgs e)

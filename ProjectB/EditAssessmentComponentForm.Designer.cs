@@ -33,10 +33,9 @@
             this.lblDateCreated = new System.Windows.Forms.Label();
             this.lblTotalMarks = new System.Windows.Forms.Label();
             this.btnUpdateAssessmentComponent = new System.Windows.Forms.Button();
-            this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnBackToAssessmentComponentList = new System.Windows.Forms.Button();
+            this.btnCLOSE = new System.Windows.Forms.Button();
             this.lblListOfRubricDetails = new MetroFramework.Drawing.Html.HtmlLabel();
             this.combboxListOfRubricDetails = new MetroFramework.Controls.MetroComboBox();
             this.combboxListOfAssesmentTitles = new MetroFramework.Controls.MetroComboBox();
@@ -85,16 +84,6 @@
             this.btnUpdateAssessmentComponent.UseVisualStyleBackColor = true;
             this.btnUpdateAssessmentComponent.Click += new System.EventHandler(this.btnUpdateAssessmentComponent_Click);
             // 
-            // btnBackToMainPage
-            // 
-            this.btnBackToMainPage.Location = new System.Drawing.Point(2, 3);
-            this.btnBackToMainPage.Name = "btnBackToMainPage";
-            this.btnBackToMainPage.Size = new System.Drawing.Size(141, 23);
-            this.btnBackToMainPage.TabIndex = 12;
-            this.btnBackToMainPage.Text = "<<Back To Main Page<<";
-            this.btnBackToMainPage.UseVisualStyleBackColor = true;
-            this.btnBackToMainPage.Click += new System.EventHandler(this.btnBackToMainPage_Click);
-            // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(385, 66);
@@ -111,15 +100,15 @@
             this.lblName.TabIndex = 10;
             this.lblName.Text = "Name";
             // 
-            // btnBackToAssessmentComponentList
+            // btnCLOSE
             // 
-            this.btnBackToAssessmentComponentList.Location = new System.Drawing.Point(145, 4);
-            this.btnBackToAssessmentComponentList.Name = "btnBackToAssessmentComponentList";
-            this.btnBackToAssessmentComponentList.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToAssessmentComponentList.TabIndex = 18;
-            this.btnBackToAssessmentComponentList.Text = "<<BACK<<";
-            this.btnBackToAssessmentComponentList.UseVisualStyleBackColor = true;
-            this.btnBackToAssessmentComponentList.Click += new System.EventHandler(this.btnBackToAssessmentComponentList_Click);
+            this.btnCLOSE.Location = new System.Drawing.Point(1, 0);
+            this.btnCLOSE.Name = "btnCLOSE";
+            this.btnCLOSE.Size = new System.Drawing.Size(75, 23);
+            this.btnCLOSE.TabIndex = 18;
+            this.btnCLOSE.Text = "<<CLOSE<<";
+            this.btnCLOSE.UseVisualStyleBackColor = true;
+            this.btnCLOSE.Click += new System.EventHandler(this.btnBackToAssessmentComponentList_Click);
             // 
             // lblListOfRubricDetails
             // 
@@ -175,13 +164,12 @@
             this.Controls.Add(this.lblListOfAssesmentTitles);
             this.Controls.Add(this.combboxListOfRubricDetails);
             this.Controls.Add(this.lblListOfRubricDetails);
-            this.Controls.Add(this.btnBackToAssessmentComponentList);
+            this.Controls.Add(this.btnCLOSE);
             this.Controls.Add(this.dtpDateUpdated);
             this.Controls.Add(this.txtTotalMarks);
             this.Controls.Add(this.lblDateCreated);
             this.Controls.Add(this.lblTotalMarks);
             this.Controls.Add(this.btnUpdateAssessmentComponent);
-            this.Controls.Add(this.btnBackToMainPage);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
             this.Name = "EditAssessmentComponentForm";
@@ -198,10 +186,9 @@
         private System.Windows.Forms.Label lblDateCreated;
         private System.Windows.Forms.Label lblTotalMarks;
         private System.Windows.Forms.Button btnUpdateAssessmentComponent;
-        private System.Windows.Forms.Button btnBackToMainPage;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Button btnBackToAssessmentComponentList;
+        private System.Windows.Forms.Button btnCLOSE;
         private MetroFramework.Drawing.Html.HtmlLabel lblListOfRubricDetails;
         private MetroFramework.Controls.MetroComboBox combboxListOfRubricDetails;
         private MetroFramework.Controls.MetroComboBox combboxListOfAssesmentTitles;

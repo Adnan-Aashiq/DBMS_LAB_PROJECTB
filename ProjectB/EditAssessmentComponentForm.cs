@@ -14,13 +14,11 @@ namespace ProjectB
     public partial class EditAssessmentComponentForm : Form
     {
         public int Id;
-        public int RubricId;
-        public int AssessmentId;
-        public EditAssessmentComponentForm(int id,int rubricid,int assessmentid)
+        
+        public EditAssessmentComponentForm(int id)
         {
             Id = id;
-            RubricId = rubricid;
-            AssessmentId = assessmentid;
+            
             InitializeComponent();
         }
         public EditAssessmentComponentForm()
@@ -34,7 +32,7 @@ namespace ProjectB
         {
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
-            string Edit_Query = "UPDATE dbo.AssessmentComponent SET Name='" + txtName.Text + "',RubricId='"+ Convert.ToInt32(combboxListOfRubricDetails.SelectedValue) + "',TotalMarks='"+ Convert.ToInt32(txtTotalMarks.Text) + "',DateCreated='"+DateTime.Today+"',DateUpdated='"+dtpDateUpdated.Value+"',AssessmentId='"+ Convert.ToInt32(combboxListOfAssesmentTitles.SelectedValue) + "'";
+            string Edit_Query = "UPDATE dbo.AssessmentComponent SET Name='" + txtName.Text + "',RubricId='"+ Convert.ToInt32(combboxListOfRubricDetails.SelectedValue) + "',TotalMarks='"+ Convert.ToInt32(txtTotalMarks.Text) + "',DateCreated='"+DateTime.Today+"',DateUpdated='"+dtpDateUpdated.Value+"',AssessmentId='"+ Convert.ToInt32(combboxListOfAssesmentTitles.SelectedValue) + "'  WHERE Id = '" + Id + "'";
             SqlCommand y = new SqlCommand(Edit_Query, Connection);
             y.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
@@ -90,9 +88,9 @@ namespace ProjectB
 
         private void btnBackToAssessmentComponentList_Click(object sender, EventArgs e)
         {
-            ListOfAddedAssessmentComponentForm d = new ListOfAddedAssessmentComponentForm();
-            this.Hide();
-            d.Show();
+           
+            this.Close();
+           
         }
     }
 }
