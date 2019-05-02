@@ -40,7 +40,7 @@
             this.btnListOfAddedAssessment = new System.Windows.Forms.Button();
             this.btnBACK = new System.Windows.Forms.Button();
             this.btnAddAssessmentComponent = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnListOfAddedAssessmentComponents = new MetroFramework.Controls.MetroButton();
             this.cmboboxRubricDetails = new System.Windows.Forms.ComboBox();
             this.lblRubricDetails = new System.Windows.Forms.Label();
             this.dtpDateCreatedAC = new System.Windows.Forms.DateTimePicker();
@@ -66,7 +66,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(15, 82);
+            this.lblTitle.Location = new System.Drawing.Point(145, 82);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(27, 13);
             this.lblTitle.TabIndex = 0;
@@ -74,14 +74,14 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(207, 75);
+            this.txtTitle.Location = new System.Drawing.Point(266, 75);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(100, 20);
             this.txtTitle.TabIndex = 1;
             // 
             // dtpDateCreated
             // 
-            this.dtpDateCreated.Location = new System.Drawing.Point(166, 135);
+            this.dtpDateCreated.Location = new System.Drawing.Point(225, 135);
             this.dtpDateCreated.Name = "dtpDateCreated";
             this.dtpDateCreated.Size = new System.Drawing.Size(200, 20);
             this.dtpDateCreated.TabIndex = 2;
@@ -89,7 +89,7 @@
             // lblDateCreated
             // 
             this.lblDateCreated.AutoSize = true;
-            this.lblDateCreated.Location = new System.Drawing.Point(15, 142);
+            this.lblDateCreated.Location = new System.Drawing.Point(145, 142);
             this.lblDateCreated.Name = "lblDateCreated";
             this.lblDateCreated.Size = new System.Drawing.Size(67, 13);
             this.lblDateCreated.TabIndex = 3;
@@ -98,7 +98,7 @@
             // lblTotalMarks
             // 
             this.lblTotalMarks.AutoSize = true;
-            this.lblTotalMarks.Location = new System.Drawing.Point(15, 195);
+            this.lblTotalMarks.Location = new System.Drawing.Point(145, 195);
             this.lblTotalMarks.Name = "lblTotalMarks";
             this.lblTotalMarks.Size = new System.Drawing.Size(60, 13);
             this.lblTotalMarks.TabIndex = 4;
@@ -107,7 +107,7 @@
             // lblTotalWeightage
             // 
             this.lblTotalWeightage.AutoSize = true;
-            this.lblTotalWeightage.Location = new System.Drawing.Point(15, 251);
+            this.lblTotalWeightage.Location = new System.Drawing.Point(145, 251);
             this.lblTotalWeightage.Name = "lblTotalWeightage";
             this.lblTotalWeightage.Size = new System.Drawing.Size(83, 13);
             this.lblTotalWeightage.TabIndex = 5;
@@ -115,21 +115,21 @@
             // 
             // txtTotalMarks
             // 
-            this.txtTotalMarks.Location = new System.Drawing.Point(207, 195);
+            this.txtTotalMarks.Location = new System.Drawing.Point(266, 195);
             this.txtTotalMarks.Name = "txtTotalMarks";
             this.txtTotalMarks.Size = new System.Drawing.Size(100, 20);
             this.txtTotalMarks.TabIndex = 6;
             // 
             // txtTotalWeightage
             // 
-            this.txtTotalWeightage.Location = new System.Drawing.Point(207, 244);
+            this.txtTotalWeightage.Location = new System.Drawing.Point(266, 244);
             this.txtTotalWeightage.Name = "txtTotalWeightage";
             this.txtTotalWeightage.Size = new System.Drawing.Size(100, 20);
             this.txtTotalWeightage.TabIndex = 7;
             // 
             // btnADD
             // 
-            this.btnADD.Location = new System.Drawing.Point(212, 327);
+            this.btnADD.Location = new System.Drawing.Point(271, 327);
             this.btnADD.Name = "btnADD";
             this.btnADD.Size = new System.Drawing.Size(95, 23);
             this.btnADD.TabIndex = 8;
@@ -167,20 +167,20 @@
             this.btnAddAssessmentComponent.UseSelectable = true;
             this.btnAddAssessmentComponent.Click += new System.EventHandler(this.btnAddAssessmentComponent_Click);
             // 
-            // metroButton2
+            // btnListOfAddedAssessmentComponents
             // 
-            this.metroButton2.Location = new System.Drawing.Point(586, 1);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(213, 23);
-            this.metroButton2.TabIndex = 13;
-            this.metroButton2.Text = "List Of Added Assessment Components";
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.btnListOfAddedAssessmentComponents.Location = new System.Drawing.Point(586, 1);
+            this.btnListOfAddedAssessmentComponents.Name = "btnListOfAddedAssessmentComponents";
+            this.btnListOfAddedAssessmentComponents.Size = new System.Drawing.Size(213, 23);
+            this.btnListOfAddedAssessmentComponents.TabIndex = 13;
+            this.btnListOfAddedAssessmentComponents.Text = "List Of Added Assessment Components";
+            this.btnListOfAddedAssessmentComponents.UseSelectable = true;
+            this.btnListOfAddedAssessmentComponents.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // cmboboxRubricDetails
             // 
             this.cmboboxRubricDetails.FormattingEnabled = true;
-            this.cmboboxRubricDetails.Location = new System.Drawing.Point(559, 109);
+            this.cmboboxRubricDetails.Location = new System.Drawing.Point(453, 109);
             this.cmboboxRubricDetails.Name = "cmboboxRubricDetails";
             this.cmboboxRubricDetails.Size = new System.Drawing.Size(121, 21);
             this.cmboboxRubricDetails.TabIndex = 22;
@@ -188,7 +188,7 @@
             // lblRubricDetails
             // 
             this.lblRubricDetails.AutoSize = true;
-            this.lblRubricDetails.Location = new System.Drawing.Point(399, 112);
+            this.lblRubricDetails.Location = new System.Drawing.Point(327, 112);
             this.lblRubricDetails.Name = "lblRubricDetails";
             this.lblRubricDetails.Size = new System.Drawing.Size(70, 13);
             this.lblRubricDetails.TabIndex = 21;
@@ -196,14 +196,14 @@
             // 
             // dtpDateCreatedAC
             // 
-            this.dtpDateCreatedAC.Location = new System.Drawing.Point(559, 251);
+            this.dtpDateCreatedAC.Location = new System.Drawing.Point(453, 251);
             this.dtpDateCreatedAC.Name = "dtpDateCreatedAC";
             this.dtpDateCreatedAC.Size = new System.Drawing.Size(200, 20);
             this.dtpDateCreatedAC.TabIndex = 20;
             // 
             // txtTotalMarksAC
             // 
-            this.txtTotalMarksAC.Location = new System.Drawing.Point(583, 199);
+            this.txtTotalMarksAC.Location = new System.Drawing.Point(477, 199);
             this.txtTotalMarksAC.Name = "txtTotalMarksAC";
             this.txtTotalMarksAC.Size = new System.Drawing.Size(100, 20);
             this.txtTotalMarksAC.TabIndex = 19;
@@ -211,7 +211,7 @@
             // lblDateCreatedAC
             // 
             this.lblDateCreatedAC.AutoSize = true;
-            this.lblDateCreatedAC.Location = new System.Drawing.Point(414, 257);
+            this.lblDateCreatedAC.Location = new System.Drawing.Point(342, 257);
             this.lblDateCreatedAC.Name = "lblDateCreatedAC";
             this.lblDateCreatedAC.Size = new System.Drawing.Size(67, 13);
             this.lblDateCreatedAC.TabIndex = 18;
@@ -220,7 +220,7 @@
             // lblTotalMarksAC
             // 
             this.lblTotalMarksAC.AutoSize = true;
-            this.lblTotalMarksAC.Location = new System.Drawing.Point(414, 199);
+            this.lblTotalMarksAC.Location = new System.Drawing.Point(342, 199);
             this.lblTotalMarksAC.Name = "lblTotalMarksAC";
             this.lblTotalMarksAC.Size = new System.Drawing.Size(60, 13);
             this.lblTotalMarksAC.TabIndex = 17;
@@ -228,7 +228,7 @@
             // 
             // btnADDComponent
             // 
-            this.btnADDComponent.Location = new System.Drawing.Point(559, 327);
+            this.btnADDComponent.Location = new System.Drawing.Point(453, 327);
             this.btnADDComponent.Name = "btnADDComponent";
             this.btnADDComponent.Size = new System.Drawing.Size(181, 23);
             this.btnADDComponent.TabIndex = 16;
@@ -238,7 +238,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(568, 72);
+            this.txtName.Location = new System.Drawing.Point(462, 72);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 15;
@@ -246,7 +246,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(399, 79);
+            this.lblName.Location = new System.Drawing.Point(327, 79);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 14;
@@ -268,7 +268,7 @@
             this.lblAssessments.AutoScrollMinSize = new System.Drawing.Size(113, 23);
             this.lblAssessments.AutoSize = false;
             this.lblAssessments.BackColor = System.Drawing.SystemColors.Window;
-            this.lblAssessments.Location = new System.Drawing.Point(390, 154);
+            this.lblAssessments.Location = new System.Drawing.Point(318, 154);
             this.lblAssessments.Name = "lblAssessments";
             this.lblAssessments.Size = new System.Drawing.Size(120, 23);
             this.lblAssessments.TabIndex = 24;
@@ -278,7 +278,7 @@
             // 
             this.combboxListOfAssessment.FormattingEnabled = true;
             this.combboxListOfAssessment.ItemHeight = 23;
-            this.combboxListOfAssessment.Location = new System.Drawing.Point(559, 154);
+            this.combboxListOfAssessment.Location = new System.Drawing.Point(453, 154);
             this.combboxListOfAssessment.Name = "combboxListOfAssessment";
             this.combboxListOfAssessment.Size = new System.Drawing.Size(139, 29);
             this.combboxListOfAssessment.TabIndex = 25;
@@ -290,7 +290,7 @@
             this.ListOfAddedAssessmentsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
             this.btnEdit});
-            this.ListOfAddedAssessmentsDataGridView.Location = new System.Drawing.Point(-191, 183);
+            this.ListOfAddedAssessmentsDataGridView.Location = new System.Drawing.Point(148, 112);
             this.ListOfAddedAssessmentsDataGridView.Name = "ListOfAddedAssessmentsDataGridView";
             this.ListOfAddedAssessmentsDataGridView.Size = new System.Drawing.Size(616, 282);
             this.ListOfAddedAssessmentsDataGridView.TabIndex = 26;
@@ -316,7 +316,7 @@
             this.ListOfAddedAssessmentComponentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDeleteAC,
             this.btnEditAC});
-            this.ListOfAddedAssessmentComponentDataGridView.Location = new System.Drawing.Point(271, 183);
+            this.ListOfAddedAssessmentComponentDataGridView.Location = new System.Drawing.Point(148, 112);
             this.ListOfAddedAssessmentComponentDataGridView.Name = "ListOfAddedAssessmentComponentDataGridView";
             this.ListOfAddedAssessmentComponentDataGridView.Size = new System.Drawing.Size(616, 282);
             this.ListOfAddedAssessmentComponentDataGridView.TabIndex = 27;
@@ -336,7 +336,7 @@
             this.btnEditAC.Text = "Edit";
             this.btnEditAC.UseColumnTextForButtonValue = true;
             // 
-            // AddAssessmentForm
+            // AssessmentMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -355,7 +355,7 @@
             this.Controls.Add(this.btnADDComponent);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.btnListOfAddedAssessmentComponents);
             this.Controls.Add(this.btnAddAssessmentComponent);
             this.Controls.Add(this.btnBACK);
             this.Controls.Add(this.btnListOfAddedAssessment);
@@ -368,7 +368,7 @@
             this.Controls.Add(this.dtpDateCreated);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.lblTitle);
-            this.Name = "AddAssessmentForm";
+            this.Name = "AssessmentMenuForm";
             this.Text = "AddAssessmentForm";
             this.Load += new System.EventHandler(this.AddAssessmentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ListOfAddedAssessmentsDataGridView)).EndInit();
@@ -392,7 +392,7 @@
         private System.Windows.Forms.Button btnListOfAddedAssessment;
         private System.Windows.Forms.Button btnBACK;
         private MetroFramework.Controls.MetroButton btnAddAssessmentComponent;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton btnListOfAddedAssessmentComponents;
         private System.Windows.Forms.ComboBox cmboboxRubricDetails;
         private System.Windows.Forms.Label lblRubricDetails;
         private System.Windows.Forms.DateTimePicker dtpDateCreatedAC;

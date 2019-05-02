@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblStudentRegistrationNumber = new MetroFramework.Drawing.Html.HtmlLabel();
             this.lblAssessmentName = new MetroFramework.Drawing.Html.HtmlLabel();
             this.lblRubricLevelDetails = new MetroFramework.Drawing.Html.HtmlLabel();
@@ -55,9 +55,9 @@
             this.lblStudentRegistrationNumber.AutoScrollMinSize = new System.Drawing.Size(152, 23);
             this.lblStudentRegistrationNumber.AutoSize = false;
             this.lblStudentRegistrationNumber.BackColor = System.Drawing.SystemColors.Window;
-            this.lblStudentRegistrationNumber.Location = new System.Drawing.Point(12, 83);
+            this.lblStudentRegistrationNumber.Location = new System.Drawing.Point(245, 80);
             this.lblStudentRegistrationNumber.Name = "lblStudentRegistrationNumber";
-            this.lblStudentRegistrationNumber.Size = new System.Drawing.Size(192, 28);
+            this.lblStudentRegistrationNumber.Size = new System.Drawing.Size(192, 35);
             this.lblStudentRegistrationNumber.TabIndex = 0;
             this.lblStudentRegistrationNumber.Text = "Student Registration Number";
             // 
@@ -67,9 +67,9 @@
             this.lblAssessmentName.AutoScrollMinSize = new System.Drawing.Size(162, 23);
             this.lblAssessmentName.AutoSize = false;
             this.lblAssessmentName.BackColor = System.Drawing.SystemColors.Window;
-            this.lblAssessmentName.Location = new System.Drawing.Point(12, 136);
+            this.lblAssessmentName.Location = new System.Drawing.Point(245, 133);
             this.lblAssessmentName.Name = "lblAssessmentName";
-            this.lblAssessmentName.Size = new System.Drawing.Size(192, 28);
+            this.lblAssessmentName.Size = new System.Drawing.Size(192, 35);
             this.lblAssessmentName.TabIndex = 1;
             this.lblAssessmentName.Text = "Assessment Component Name";
             // 
@@ -79,9 +79,9 @@
             this.lblRubricLevelDetails.AutoScrollMinSize = new System.Drawing.Size(110, 23);
             this.lblRubricLevelDetails.AutoSize = false;
             this.lblRubricLevelDetails.BackColor = System.Drawing.SystemColors.Window;
-            this.lblRubricLevelDetails.Location = new System.Drawing.Point(12, 197);
+            this.lblRubricLevelDetails.Location = new System.Drawing.Point(245, 194);
             this.lblRubricLevelDetails.Name = "lblRubricLevelDetails";
-            this.lblRubricLevelDetails.Size = new System.Drawing.Size(127, 28);
+            this.lblRubricLevelDetails.Size = new System.Drawing.Size(127, 35);
             this.lblRubricLevelDetails.TabIndex = 2;
             this.lblRubricLevelDetails.Text = "Rubric Level Details";
             // 
@@ -91,9 +91,9 @@
             this.lblEvaluationDate.AutoScrollMinSize = new System.Drawing.Size(85, 23);
             this.lblEvaluationDate.AutoSize = false;
             this.lblEvaluationDate.BackColor = System.Drawing.SystemColors.Window;
-            this.lblEvaluationDate.Location = new System.Drawing.Point(12, 260);
+            this.lblEvaluationDate.Location = new System.Drawing.Point(245, 257);
             this.lblEvaluationDate.Name = "lblEvaluationDate";
-            this.lblEvaluationDate.Size = new System.Drawing.Size(127, 28);
+            this.lblEvaluationDate.Size = new System.Drawing.Size(127, 35);
             this.lblEvaluationDate.TabIndex = 2;
             this.lblEvaluationDate.Text = "EvaluationDate";
             // 
@@ -101,7 +101,7 @@
             // 
             this.combboxStudentRegistrationNumber.FormattingEnabled = true;
             this.combboxStudentRegistrationNumber.ItemHeight = 23;
-            this.combboxStudentRegistrationNumber.Location = new System.Drawing.Point(210, 82);
+            this.combboxStudentRegistrationNumber.Location = new System.Drawing.Point(443, 79);
             this.combboxStudentRegistrationNumber.Name = "combboxStudentRegistrationNumber";
             this.combboxStudentRegistrationNumber.Size = new System.Drawing.Size(199, 29);
             this.combboxStudentRegistrationNumber.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             this.combboxAssessmentComponentName.FormattingEnabled = true;
             this.combboxAssessmentComponentName.ItemHeight = 23;
-            this.combboxAssessmentComponentName.Location = new System.Drawing.Point(210, 136);
+            this.combboxAssessmentComponentName.Location = new System.Drawing.Point(443, 133);
             this.combboxAssessmentComponentName.Name = "combboxAssessmentComponentName";
             this.combboxAssessmentComponentName.Size = new System.Drawing.Size(199, 29);
             this.combboxAssessmentComponentName.TabIndex = 4;
@@ -126,7 +126,7 @@
             // 
             this.combboxRubricLevelDetails.FormattingEnabled = true;
             this.combboxRubricLevelDetails.ItemHeight = 23;
-            this.combboxRubricLevelDetails.Location = new System.Drawing.Point(210, 197);
+            this.combboxRubricLevelDetails.Location = new System.Drawing.Point(443, 194);
             this.combboxRubricLevelDetails.Name = "combboxRubricLevelDetails";
             this.combboxRubricLevelDetails.Size = new System.Drawing.Size(199, 29);
             this.combboxRubricLevelDetails.TabIndex = 5;
@@ -136,8 +136,8 @@
             // 
             // dtpEvaluationDate
             // 
-            this.dtpEvaluationDate.Location = new System.Drawing.Point(210, 259);
-            this.dtpEvaluationDate.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpEvaluationDate.Location = new System.Drawing.Point(443, 256);
+            this.dtpEvaluationDate.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpEvaluationDate.Name = "dtpEvaluationDate";
             this.dtpEvaluationDate.Size = new System.Drawing.Size(215, 29);
             this.dtpEvaluationDate.TabIndex = 6;
@@ -146,9 +146,9 @@
             // 
             // btnEvaluateThisSelectedStudent
             // 
-            this.btnEvaluateThisSelectedStudent.Location = new System.Drawing.Point(12, 322);
+            this.btnEvaluateThisSelectedStudent.Location = new System.Drawing.Point(245, 319);
             this.btnEvaluateThisSelectedStudent.Name = "btnEvaluateThisSelectedStudent";
-            this.btnEvaluateThisSelectedStudent.Size = new System.Drawing.Size(413, 23);
+            this.btnEvaluateThisSelectedStudent.Size = new System.Drawing.Size(413, 30);
             this.btnEvaluateThisSelectedStudent.TabIndex = 7;
             this.btnEvaluateThisSelectedStudent.Text = "Evaluate This Selected Student";
             this.btnEvaluateThisSelectedStudent.UseSelectable = true;
@@ -166,7 +166,7 @@
             // 
             // btnEvaluateAStudent
             // 
-            this.btnEvaluateAStudent.Location = new System.Drawing.Point(395, 2);
+            this.btnEvaluateAStudent.Location = new System.Drawing.Point(292, 2);
             this.btnEvaluateAStudent.Name = "btnEvaluateAStudent";
             this.btnEvaluateAStudent.Size = new System.Drawing.Size(149, 23);
             this.btnEvaluateAStudent.TabIndex = 9;
@@ -181,37 +181,37 @@
             this.StudentResultDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StudentResultDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.StudentResultDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentResultDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentResultDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.StudentResultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentResultDataGridView.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentResultDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.StudentResultDataGridView.EnableHeadersVisualStyles = false;
             this.StudentResultDataGridView.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.StudentResultDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.StudentResultDataGridView.Location = new System.Drawing.Point(90, 46);
+            this.StudentResultDataGridView.Location = new System.Drawing.Point(93, 31);
             this.StudentResultDataGridView.Name = "StudentResultDataGridView";
             this.StudentResultDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentResultDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentResultDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.StudentResultDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.StudentResultDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentResultDataGridView.Size = new System.Drawing.Size(729, 334);
@@ -220,7 +220,7 @@
             // 
             // btnShowStudentResult
             // 
-            this.btnShowStudentResult.Location = new System.Drawing.Point(546, 2);
+            this.btnShowStudentResult.Location = new System.Drawing.Point(443, 2);
             this.btnShowStudentResult.Name = "btnShowStudentResult";
             this.btnShowStudentResult.Size = new System.Drawing.Size(149, 23);
             this.btnShowStudentResult.TabIndex = 11;
@@ -231,7 +231,7 @@
             // btnPrint
             // 
             this.btnPrint.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrint.Location = new System.Drawing.Point(764, 386);
+            this.btnPrint.Location = new System.Drawing.Point(754, 371);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(98, 64);
             this.btnPrint.TabIndex = 12;

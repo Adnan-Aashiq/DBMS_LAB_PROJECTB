@@ -17,14 +17,16 @@ namespace ProjectB
         {
             InitializeComponent();
         }
-
+        //Getting Back to main page
         private void btnBackToMain_Click(object sender, EventArgs e)
         {
             WelcomeForm w = new WelcomeForm();
             this.Hide();
             w.Show();
         }
+        //Providing Access to DataBase
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
+        //Adding Assessment to database on Clicking on buttton
         private void btnADDAssessment_Click(object sender, EventArgs e)
         {
             SqlConnection c = new SqlConnection(constr);
@@ -43,6 +45,7 @@ namespace ProjectB
             }
         }
 
+        //Showing List Of Added Assessments By datagridview and Hiding other Things Except this
         private void btnListOfAddedAssessment_Click(object sender, EventArgs e)
         {
 
@@ -89,9 +92,7 @@ namespace ProjectB
                     }
                 }
             }
-            //ListOfAddedAssessmentsForm d = new ListOfAddedAssessmentsForm();
-            //this.Hide();
-            //d.Show();
+           
         }
 
         private void btnBackToMainPage_Click(object sender, EventArgs e)
@@ -102,7 +103,7 @@ namespace ProjectB
             o.Show();
 
         }
-
+        //On Load just Showing Add Assessment Menu
         private void AddAssessmentForm_Load(object sender, EventArgs e)
         {
             ListOfAddedAssessmentComponentDataGridView.Hide();
@@ -122,9 +123,10 @@ namespace ProjectB
             btnADDComponent.Hide();
 
         }
-
+        // Adding Assessment Component MEnu
         private void btnAddAssessmentComponent_Click(object sender, EventArgs e)
         {
+            //Showing Added RUbric Details in combobox And Adding this against this rubric
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
             if (Connection.State == ConnectionState.Open)
@@ -138,7 +140,7 @@ namespace ProjectB
                 cmboboxRubricDetails.ValueMember = "id";
             }
             Connection.Close();
-
+            //Showing Added Assessment Titles in combobox And Adding this against this Assessment
             SqlConnection Connection1 = new SqlConnection(constr);
             Connection1.Open();
             if (Connection1.State == ConnectionState.Open)
@@ -179,11 +181,9 @@ namespace ProjectB
             lblDateCreatedAC.Show();
             dtpDateCreatedAC.Show();
             btnADDComponent.Show();
-            //AddAssessmentComponentForm r = new AddAssessmentComponentForm();
-            //this.Hide();
-            //r.Show();
+            
         }
-
+        //Showing Ad Assessment Menu
         private void btnAddAssessment_Click_1(object sender, EventArgs e)
         {
             ListOfAddedAssessmentComponentDataGridView.Hide();
@@ -213,7 +213,7 @@ namespace ProjectB
             dtpDateCreatedAC.Hide();
             btnADDComponent.Hide();
         }
-
+        // Editting and deleting Assessments from database that are showing in datagridview
         private void ListOfAddedAssessmentsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             SqlConnection Connection = new SqlConnection(constr);
@@ -237,12 +237,10 @@ namespace ProjectB
                 var formPopup = new EditAssessmentForm(id);
                 formPopup.Show(this);
 
-                //EditAssessmentForm r = new EditAssessmentForm(id);
-                //this.Hide();
-                //r.Show();
+                
             }
         }
-
+        //Adding Assessment component to database
         private void btnADDComponent_Click(object sender, EventArgs e)
         {
             SqlConnection Connection = new SqlConnection(constr);
@@ -261,7 +259,7 @@ namespace ProjectB
             }
             Connection.Close();
         }
-
+        // Editting and deleting Assessment Components from database that are showing in datagridview
         private void ListOfAddedAssessmentComponentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == ListOfAddedAssessmentComponentDataGridView.Columns["btnEditAC"].Index)
@@ -269,15 +267,10 @@ namespace ProjectB
                 int row = e.RowIndex;
 
                 int id = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["Id"].Value);
-                //int rubricid = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["RubricId"].Value);
-                //int assessmentid = Convert.ToInt32(ListOfAddedAssessmentComponentDataGridView.Rows[row].Cells["AssessmentId"].Value);
-
                 var formPopup = new EditAssessmentComponentForm(id);
                 formPopup.Show(this);
 
-                //EditAssessmentComponentForm r = new EditAssessmentComponentForm(id, rubricid, assessmentid);
-                //this.Hide();
-                //r.Show();
+                
             }
             SqlConnection Connection = new SqlConnection(constr);
             Connection.Open();
@@ -300,7 +293,7 @@ namespace ProjectB
                 }
             }
         }
-
+        //Showing Assessment Components From database in DataGridView
         private void metroButton2_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(constr))

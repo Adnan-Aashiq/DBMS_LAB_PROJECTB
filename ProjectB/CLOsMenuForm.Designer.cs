@@ -45,7 +45,7 @@
             // lblCLOName
             // 
             this.lblCLOName.AutoSize = true;
-            this.lblCLOName.Location = new System.Drawing.Point(8, 51);
+            this.lblCLOName.Location = new System.Drawing.Point(272, 119);
             this.lblCLOName.Name = "lblCLOName";
             this.lblCLOName.Size = new System.Drawing.Size(59, 13);
             this.lblCLOName.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // txtCLOName
             // 
-            this.txtCLOName.Location = new System.Drawing.Point(118, 44);
+            this.txtCLOName.Location = new System.Drawing.Point(382, 112);
             this.txtCLOName.Name = "txtCLOName";
             this.txtCLOName.Size = new System.Drawing.Size(100, 20);
             this.txtCLOName.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lblCreatedDate
             // 
             this.lblCreatedDate.AutoSize = true;
-            this.lblCreatedDate.Location = new System.Drawing.Point(8, 104);
+            this.lblCreatedDate.Location = new System.Drawing.Point(272, 172);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(70, 13);
             this.lblCreatedDate.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // dtpCreatedDate
             // 
-            this.dtpCreatedDate.Location = new System.Drawing.Point(109, 104);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(373, 172);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
             this.dtpCreatedDate.Size = new System.Drawing.Size(200, 20);
             this.dtpCreatedDate.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // btnAddCLOs
             // 
-            this.btnAddCLOs.Location = new System.Drawing.Point(143, 179);
+            this.btnAddCLOs.Location = new System.Drawing.Point(407, 247);
             this.btnAddCLOs.Name = "btnAddCLOs";
             this.btnAddCLOs.Size = new System.Drawing.Size(75, 23);
             this.btnAddCLOs.TabIndex = 4;
@@ -122,9 +122,9 @@
             this.CLOsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
             this.btnEdit});
-            this.CLOsDataGridView.Location = new System.Drawing.Point(224, 143);
+            this.CLOsDataGridView.Location = new System.Drawing.Point(40, 82);
             this.CLOsDataGridView.Name = "CLOsDataGridView";
-            this.CLOsDataGridView.Size = new System.Drawing.Size(616, 282);
+            this.CLOsDataGridView.Size = new System.Drawing.Size(748, 282);
             this.CLOsDataGridView.TabIndex = 8;
             this.CLOsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CLOsDataGridView_CellContentClick);
             // 
@@ -142,7 +142,7 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseColumnTextForButtonValue = true;
             // 
-            // AddNewCLOsForm
+            // CLOsMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +157,7 @@
             this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.txtCLOName);
             this.Controls.Add(this.lblCLOName);
-            this.Name = "AddNewCLOsForm";
+            this.Name = "CLOsMenuForm";
             this.Text = "AddNewCLOs";
             this.Load += new System.EventHandler(this.AddNewCLOsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CLOsDataGridView)).EndInit();

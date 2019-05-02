@@ -60,9 +60,7 @@ namespace ProjectB
 
         private void btnADD_Click(object sender, EventArgs e)
         {
-            LookupFilterForm o = new LookupFilterForm();
-            this.Hide();
-            o.Show();
+            
             
         }
 

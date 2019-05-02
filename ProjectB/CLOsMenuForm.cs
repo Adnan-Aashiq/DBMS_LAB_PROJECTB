@@ -21,13 +21,14 @@ namespace ProjectB
         {
 
         }
-
+        //Getting Back To main page
         private void btnBackToMainPage_Click(object sender, EventArgs e)
         {
             WelcomeForm back = new WelcomeForm();
             this.Hide();
             back.Show();
         }
+        
         public string constr = "Data Source=HAIER-PC;Initial Catalog=ProjectB;Integrated Security=True";
         private void btnAddCLOs_Click(object sender, EventArgs e)
         {
@@ -118,15 +119,7 @@ namespace ProjectB
                 formPopup.Show(this);
                 
             }
-            if (e.ColumnIndex == CLOsDataGridView.Columns["btnAddRubric"].Index)
-            {
-                int row = e.RowIndex;
-                int id = Convert.ToInt32(CLOsDataGridView.Rows[row].Cells["Id"].Value);
-
-                
-                //var formPopup = new AddRubricForm(id);
-                //formPopup.Show(this);
-            }
+            
         }
     }
 }

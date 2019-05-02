@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.ListOfAddedRubricDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnBackToMainPage = new System.Windows.Forms.Button();
             this.btnAddRubric = new MetroFramework.Controls.MetroButton();
             this.btnListOfAddedRubrics = new MetroFramework.Controls.MetroButton();
             this.btnAddRubricLevel = new MetroFramework.Controls.MetroButton();
-            this.btnDelete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnListOfAddedRubricLevels = new MetroFramework.Controls.MetroButton();
             this.combboxCLODetails = new System.Windows.Forms.ComboBox();
             this.lblCLONames = new System.Windows.Forms.Label();
@@ -61,11 +61,25 @@
             this.ListOfAddedRubricDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDelete,
             this.btnEdit});
-            this.ListOfAddedRubricDataGridView.Location = new System.Drawing.Point(106, 29);
+            this.ListOfAddedRubricDataGridView.Location = new System.Drawing.Point(141, 105);
             this.ListOfAddedRubricDataGridView.Name = "ListOfAddedRubricDataGridView";
             this.ListOfAddedRubricDataGridView.Size = new System.Drawing.Size(579, 287);
             this.ListOfAddedRubricDataGridView.TabIndex = 0;
             this.ListOfAddedRubricDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListOfAddedRubricdataGridView_CellContentClick);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.HeaderText = "Delete";
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseColumnTextForButtonValue = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.HeaderText = "Edit";
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseColumnTextForButtonValue = true;
             // 
             // btnBackToMainPage
             // 
@@ -107,20 +121,6 @@
             this.btnAddRubricLevel.UseSelectable = true;
             this.btnAddRubricLevel.Click += new System.EventHandler(this.btnAddRubricLevel_Click);
             // 
-            // btnDelete
-            // 
-            this.btnDelete.HeaderText = "Delete";
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseColumnTextForButtonValue = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.HeaderText = "Edit";
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseColumnTextForButtonValue = true;
-            // 
             // btnListOfAddedRubricLevels
             // 
             this.btnListOfAddedRubricLevels.Location = new System.Drawing.Point(505, 0);
@@ -134,7 +134,7 @@
             // combboxCLODetails
             // 
             this.combboxCLODetails.FormattingEnabled = true;
-            this.combboxCLODetails.Location = new System.Drawing.Point(252, 108);
+            this.combboxCLODetails.Location = new System.Drawing.Point(345, 121);
             this.combboxCLODetails.Name = "combboxCLODetails";
             this.combboxCLODetails.Size = new System.Drawing.Size(121, 21);
             this.combboxCLODetails.TabIndex = 43;
@@ -142,7 +142,7 @@
             // lblCLONames
             // 
             this.lblCLONames.AutoSize = true;
-            this.lblCLONames.Location = new System.Drawing.Point(133, 116);
+            this.lblCLONames.Location = new System.Drawing.Point(226, 129);
             this.lblCLONames.Name = "lblCLONames";
             this.lblCLONames.Size = new System.Drawing.Size(64, 13);
             this.lblCLONames.TabIndex = 42;
@@ -150,7 +150,7 @@
             // 
             // btnADDR
             // 
-            this.btnADDR.Location = new System.Drawing.Point(284, 244);
+            this.btnADDR.Location = new System.Drawing.Point(377, 257);
             this.btnADDR.Name = "btnADDR";
             this.btnADDR.Size = new System.Drawing.Size(75, 24);
             this.btnADDR.TabIndex = 41;
@@ -160,7 +160,7 @@
             // 
             // txtRubricDetails
             // 
-            this.txtRubricDetails.Location = new System.Drawing.Point(273, 168);
+            this.txtRubricDetails.Location = new System.Drawing.Point(366, 181);
             this.txtRubricDetails.Multiline = true;
             this.txtRubricDetails.Name = "txtRubricDetails";
             this.txtRubricDetails.Size = new System.Drawing.Size(100, 51);
@@ -169,7 +169,7 @@
             // lblRubricDetails
             // 
             this.lblRubricDetails.AutoSize = true;
-            this.lblRubricDetails.Location = new System.Drawing.Point(133, 171);
+            this.lblRubricDetails.Location = new System.Drawing.Point(226, 184);
             this.lblRubricDetails.Name = "lblRubricDetails";
             this.lblRubricDetails.Size = new System.Drawing.Size(73, 13);
             this.lblRubricDetails.TabIndex = 39;
@@ -184,7 +184,7 @@
             "Satisfactory",
             "Good",
             "Excellent"});
-            this.combboxRubricLevelDetails.Location = new System.Drawing.Point(532, 144);
+            this.combboxRubricLevelDetails.Location = new System.Drawing.Point(445, 172);
             this.combboxRubricLevelDetails.Name = "combboxRubricLevelDetails";
             this.combboxRubricLevelDetails.Size = new System.Drawing.Size(121, 29);
             this.combboxRubricLevelDetails.TabIndex = 48;
@@ -193,7 +193,7 @@
             // lblMeasurementLevel
             // 
             this.lblMeasurementLevel.AutoSize = true;
-            this.lblMeasurementLevel.Location = new System.Drawing.Point(384, 199);
+            this.lblMeasurementLevel.Location = new System.Drawing.Point(297, 227);
             this.lblMeasurementLevel.Name = "lblMeasurementLevel";
             this.lblMeasurementLevel.Size = new System.Drawing.Size(100, 13);
             this.lblMeasurementLevel.TabIndex = 47;
@@ -201,14 +201,14 @@
             // 
             // txtMeasurementLevel
             // 
-            this.txtMeasurementLevel.Location = new System.Drawing.Point(553, 196);
+            this.txtMeasurementLevel.Location = new System.Drawing.Point(466, 224);
             this.txtMeasurementLevel.Name = "txtMeasurementLevel";
             this.txtMeasurementLevel.Size = new System.Drawing.Size(100, 20);
             this.txtMeasurementLevel.TabIndex = 46;
             // 
             // btnADDRL
             // 
-            this.btnADDRL.Location = new System.Drawing.Point(519, 245);
+            this.btnADDRL.Location = new System.Drawing.Point(432, 273);
             this.btnADDRL.Name = "btnADDRL";
             this.btnADDRL.Size = new System.Drawing.Size(134, 23);
             this.btnADDRL.TabIndex = 45;
@@ -219,7 +219,7 @@
             // lblDtailsRL
             // 
             this.lblDtailsRL.AutoSize = true;
-            this.lblDtailsRL.Location = new System.Drawing.Point(394, 144);
+            this.lblDtailsRL.Location = new System.Drawing.Point(307, 172);
             this.lblDtailsRL.Name = "lblDtailsRL";
             this.lblDtailsRL.Size = new System.Drawing.Size(39, 13);
             this.lblDtailsRL.TabIndex = 44;
@@ -234,7 +234,7 @@
             "Satisfactory",
             "Good",
             "Excellent"});
-            this.combboxListOfRubricDetails.Location = new System.Drawing.Point(532, 86);
+            this.combboxListOfRubricDetails.Location = new System.Drawing.Point(445, 114);
             this.combboxListOfRubricDetails.Name = "combboxListOfRubricDetails";
             this.combboxListOfRubricDetails.Size = new System.Drawing.Size(121, 29);
             this.combboxListOfRubricDetails.TabIndex = 50;
@@ -243,7 +243,7 @@
             // lblListOfRubricDetails
             // 
             this.lblListOfRubricDetails.AutoSize = true;
-            this.lblListOfRubricDetails.Location = new System.Drawing.Point(394, 89);
+            this.lblListOfRubricDetails.Location = new System.Drawing.Point(307, 117);
             this.lblListOfRubricDetails.Name = "lblListOfRubricDetails";
             this.lblListOfRubricDetails.Size = new System.Drawing.Size(106, 13);
             this.lblListOfRubricDetails.TabIndex = 49;
@@ -255,7 +255,7 @@
             this.ListOfAddedRubricLeveldataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDeleteRL,
             this.btnEditRL});
-            this.ListOfAddedRubricLeveldataGridView.Location = new System.Drawing.Point(106, 220);
+            this.ListOfAddedRubricLeveldataGridView.Location = new System.Drawing.Point(141, 105);
             this.ListOfAddedRubricLeveldataGridView.Name = "ListOfAddedRubricLeveldataGridView";
             this.ListOfAddedRubricLeveldataGridView.Size = new System.Drawing.Size(579, 287);
             this.ListOfAddedRubricLeveldataGridView.TabIndex = 51;

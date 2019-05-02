@@ -38,7 +38,6 @@ D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\M
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.dll
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\bin\Debug\MetroFramework.Fonts.dll
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.csprojAssemblyReference.cache
-D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupFilterForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.LookupMenuForm.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.FormAddStudent.resources
 D:\Study\6th\Database Management System LAB\ProjectB - Copy\ProjectB\obj\Debug\ProjectB.EditAssessmentComponentForm.resources

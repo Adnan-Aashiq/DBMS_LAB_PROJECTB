@@ -70,12 +70,6 @@
     <Compile Include="RubricMenuForm.Designer.cs">
       <DependentUpon>RubricMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LookupFilterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LookupFilterForm.Designer.cs">
-      <DependentUpon>LookupFilterForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LookupMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,9 +149,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RubricMenuForm.resx">
       <DependentUpon>RubricMenuForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LookupFilterForm.resx">
-      <DependentUpon>LookupFilterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LookupMenuForm.resx">
       <DependentUpon>LookupMenuForm.cs</DependentUpon>

@@ -56,7 +56,7 @@
             // 
             // btnMark
             // 
-            this.btnMark.Location = new System.Drawing.Point(67, 386);
+            this.btnMark.Location = new System.Drawing.Point(376, 427);
             this.btnMark.Name = "btnMark";
             this.btnMark.Size = new System.Drawing.Size(118, 23);
             this.btnMark.TabIndex = 1;
@@ -67,7 +67,7 @@
             // lblMarkStudentAttendence
             // 
             this.lblMarkStudentAttendence.AutoSize = true;
-            this.lblMarkStudentAttendence.Location = new System.Drawing.Point(152, 39);
+            this.lblMarkStudentAttendence.Location = new System.Drawing.Point(365, 53);
             this.lblMarkStudentAttendence.Name = "lblMarkStudentAttendence";
             this.lblMarkStudentAttendence.Size = new System.Drawing.Size(129, 13);
             this.lblMarkStudentAttendence.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             // dtpAttendenceDate
             // 
-            this.dtpAttendenceDate.Location = new System.Drawing.Point(127, 87);
+            this.dtpAttendenceDate.Location = new System.Drawing.Point(340, 101);
             this.dtpAttendenceDate.Name = "dtpAttendenceDate";
             this.dtpAttendenceDate.Size = new System.Drawing.Size(192, 20);
             this.dtpAttendenceDate.TabIndex = 25;
@@ -95,7 +95,7 @@
             // lblAttendenceDate
             // 
             this.lblAttendenceDate.AutoSize = true;
-            this.lblAttendenceDate.Location = new System.Drawing.Point(9, 94);
+            this.lblAttendenceDate.Location = new System.Drawing.Point(232, 105);
             this.lblAttendenceDate.Name = "lblAttendenceDate";
             this.lblAttendenceDate.Size = new System.Drawing.Size(88, 13);
             this.lblAttendenceDate.TabIndex = 23;
@@ -133,7 +133,7 @@
             this.metroGridListOfAddedStudents.EnableHeadersVisualStyles = false;
             this.metroGridListOfAddedStudents.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGridListOfAddedStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGridListOfAddedStudents.Location = new System.Drawing.Point(12, 156);
+            this.metroGridListOfAddedStudents.Location = new System.Drawing.Point(72, 194);
             this.metroGridListOfAddedStudents.Name = "metroGridListOfAddedStudents";
             this.metroGridListOfAddedStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -176,7 +176,7 @@
             // 
             // btnViewListOfAddedStudents
             // 
-            this.btnViewListOfAddedStudents.Location = new System.Drawing.Point(137, 127);
+            this.btnViewListOfAddedStudents.Location = new System.Drawing.Point(350, 141);
             this.btnViewListOfAddedStudents.Name = "btnViewListOfAddedStudents";
             this.btnViewListOfAddedStudents.Size = new System.Drawing.Size(192, 23);
             this.btnViewListOfAddedStudents.TabIndex = 28;
@@ -187,7 +187,7 @@
             // btnStudentAttendenceRecord
             // 
             this.btnStudentAttendenceRecord.AutoSize = true;
-            this.btnStudentAttendenceRecord.Location = new System.Drawing.Point(596, 2);
+            this.btnStudentAttendenceRecord.Location = new System.Drawing.Point(548, 2);
             this.btnStudentAttendenceRecord.Name = "btnStudentAttendenceRecord";
             this.btnStudentAttendenceRecord.Size = new System.Drawing.Size(202, 23);
             this.btnStudentAttendenceRecord.TabIndex = 29;
@@ -204,7 +204,7 @@
             "Absent",
             "Leave",
             "Late"});
-            this.combboxFilter.Location = new System.Drawing.Point(690, 142);
+            this.combboxFilter.Location = new System.Drawing.Point(252, 141);
             this.combboxFilter.Name = "combboxFilter";
             this.combboxFilter.Size = new System.Drawing.Size(109, 29);
             this.combboxFilter.TabIndex = 33;
@@ -217,7 +217,7 @@
             this.lblFilterByStatus.AutoScrollMinSize = new System.Drawing.Size(52, 23);
             this.lblFilterByStatus.AutoSize = false;
             this.lblFilterByStatus.BackColor = System.Drawing.SystemColors.Window;
-            this.lblFilterByStatus.Location = new System.Drawing.Point(517, 148);
+            this.lblFilterByStatus.Location = new System.Drawing.Point(79, 147);
             this.lblFilterByStatus.Name = "lblFilterByStatus";
             this.lblFilterByStatus.Size = new System.Drawing.Size(88, 23);
             this.lblFilterByStatus.TabIndex = 32;
@@ -250,7 +250,7 @@
             this.StudentAttendenceRecordDataGridView.EnableHeadersVisualStyles = false;
             this.StudentAttendenceRecordDataGridView.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.StudentAttendenceRecordDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.StudentAttendenceRecordDataGridView.Location = new System.Drawing.Point(490, 238);
+            this.StudentAttendenceRecordDataGridView.Location = new System.Drawing.Point(72, 194);
             this.StudentAttendenceRecordDataGridView.Name = "StudentAttendenceRecordDataGridView";
             this.StudentAttendenceRecordDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -265,6 +265,7 @@
             this.StudentAttendenceRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentAttendenceRecordDataGridView.Size = new System.Drawing.Size(776, 272);
             this.StudentAttendenceRecordDataGridView.TabIndex = 31;
+            this.StudentAttendenceRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentAttendenceRecordDataGridView_CellContentClick);
             // 
             // btnMarkAttendence
             // 

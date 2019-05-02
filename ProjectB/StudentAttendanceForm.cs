@@ -248,5 +248,10 @@ namespace ProjectB
         {
             (StudentAttendenceRecordDataGridView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Status LIKE '{0}%'", combboxFilter.Text);
         }
+
+        private void StudentAttendenceRecordDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
